@@ -1,0 +1,841 @@
+[
+  {
+    "name": {
+      "uz": "Varix vivasam",
+      "ru": "Варикс vivasam",
+      "en": "Varix vivasam"
+    },
+    "specialty": {
+      "uz": "Variks vivasam - bu tabiiy angioprotektor, venotonik va antioksidantni o‘z ichiga olgan polikomponent preparat. Barcha komponentlar ega sinergizm (bir-birining ta’sirini kuchaytirish).",
+      "ru": "Варикс vivasam -это поликомпонентный препарат, содержащий натуральные ангиопротектор, венотоник и антиоксидант. Все компоненты обладают синергизмом (усилением действия друг друга).",
+      "en": "Variks vivasam is a polycomponent preparation containing natural angioprotectors, venotonics, and antioxidants. All components have synergism (intensification of each other's actions)."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Variks vivasam.  Angioprotektorlar guruhiga kiruvchi va vena kasalliklarini davolash va oldini olish uchun qo‘llaniladigan preparat.",
+      "ru": "Варикс vivasam.  Препарат, который относится к группе ангиопротекторов и применяется для лечения и профилактики заболеваний вен.",
+      "en": "Variks vivesam.  A drug belonging to the angioprotectors group and used for the treatment and prevention of venous diseases."
+    },
+    "description2": {
+      "uz": "Diosmin, gesperidin va uzum bargi ekstrakti yurak-qon tomir, limfa va suyak-bo‘g‘im tizimlari faoliyatini qo‘llab-quvvatlaydi. Qon aylanishini yaxshilaydi, tomirlarni mustahkamlaydi, shish va yallig‘lanishni kamaytiradi. Antioksidant, immunitetni kuchaytiruvchi va kollagen hosil qiluvchi ta’sirga ega. Lipid almashinuvi, qand miqdori va qon bosimini me’yorda ushlashda yordam beradi. Omega-3, A, D va boshqa foydali moddalarni o‘z ichiga oladi.",
+      "ru": "Диосмин, гесперидин и экстракт виноградного листа поддерживают деятельность сердечно-сосудистой, лимфатической и костно-суставной систем. Улучшает кровообращение, укрепляет сосуды, уменьшает отек и воспаление. Обладает антиоксидантным, иммуностимулирующим и коллагенообразующим действием. Это помогает поддерживать липидный обмен, уровень сахара и кровяное давление в норме. Содержит омега-3, А, D и другие полезные вещества.",
+      "en": "Diosmine, hesperidine, and grape leaf extract support the function of the cardiovascular, lymphatic, and musculoskeletal systems. Improves blood circulation, strengthens blood vessels, reduces swelling and inflammation. It has antioxidant, immunostimulating, and collagen-forming effects. It helps maintain lipid metabolism, sugar levels, and blood pressure. Omega-3, A, D, and other beneficial substances."
+    },
+    "description3": {
+      "uz": "Variks vivasam qabuliga ko‘rsatmalar: \n-Oyoq venalarining varikoz kengayishi \n-Oyoqlarda og‘irlik va charchoq hissi, tungi tutqanoqlar, trofik buzilishlar, zo‘riqish hissi, paresteziyalar va og‘riq bilan kechadigan oyoqlarning surunkali venoz yetishmovchiligini simptomatik davolash \n-Mikrotsirkulyatsiya buzilishlari \n-Surunkali bavosil va o‘tkir gemorroidal xurujlarni davolash\n-Lipid almashinuvi buzilishlari (ateroskleroz, semizlik) \n-Qandli diabet 2-turi va oyoqlarning trofik yaralarini davolash \n-GK (gipertoniya kasalligi) ni kompleks davolash \n-Limfedemani davolash (gesperidin limfedemada shishni kamaytiradi va qo‘l harakatchanligini yaxshilaydi) \n-JNYOX (jigarning alkogolsiz yog‘li kasalligi) ni kompleks davolash \n-RA (revmatoid artrit) ni kompleks davolash. \nKattalar uchun tavsiya etiladigan doza 2 tabletkadan kuniga 1 marta; zarur bo‘lganda doza 4 tabletka/kun gacha oshirilishi mumkin. Tabletkalarni ertalab, ovqatlanishdan oldin, butunligicha yutib yuborish, suv bilan ichish tavsiya etiladi.",
+      "ru": "Показания к приёму Варикс vivasam: \n-Варикозное расширение вен нижних конечностей \n-Симптоматическое лечение хронической венозной недостаточности нижних конечностей, сопровождающейся ощущением тяжести и усталости в ногах, ночными судорогами, трофическими нарушениями, чувством напряжения, парестезиями и болью \n-Нарушения микроциркуляции \n-Лечение хронического геморроя и острых геморроидальных приступов\n-Нарушения липидного обмена (атеросклероз, ожирение) \n-Сахарный диабет 2-го типа и лечение трофических язв нижних конечностей \n-Комплексная терапия ГБ (гипертонической болезни)\n-Терапия лимфедемы (гесперидин уменьшает отёк и улучшает подвижность рук при лимфедеме)\n-Комплексная терапия НАЖБП (неалкогольной жировой болезни печени)\n-Комплексная терапия РА (ревматоидного артрита).\nРекомендуемая доза для взрослых составляет 2 таблетки 1 раз/сут; при необходимости доза может быть повышена до 4 таблеток/сут. Таблетки рекомендуют принимать утром, до приёма пищи, проглатывать целиком, запивая водой.",
+      "en": "Indications for Variks vivasam: \n-Varyotic dilation of the lower extremities \n-Symptomatic treatment of chronic venous insufficiency of the lower extremities, accompanied by a feeling of heaviness and fatigue in the legs, night spasms, trophic disorders, a feeling of tension, paresthesia, and pain \n-Microcirculation disorders \n-Treatment of chronic hemorrhoids and acute hemorrhoidal attacks\n-Lipid metabolism disorders (atherosclerosis, obesity) \n-Types 2 diabetes mellitus and treatment of trophic ulcers of the lower extremities \n-Complex therapy for hypertension \n-Lymphedema therapy (hesperidine reduces swelling and improves hand mobility in lymphedema) \n-Complex therapy for non-alcoholic fatty liver disease \n-Complex therapy for rheumatoid arthritis.\nThe recommended dose for adults is 2 tablets 1 time/day; if necessary, the dose can be increased to 4 tablets/day. The tablets are recommended to be taken in the morning, before meals, swallowed whole, while drinking with water."
+    },
+    "description4": {
+      "uz": "Preparat komponentlarini individual ko‘tara olmaslik. 18 yoshgacha bo‘lgan bolalar yoshi. Qo‘llashdan oldin shifokor bilan maslahatlashish tavsiya etiladi.",
+      "ru": "Индивидуальная непереносимость к компонентам препарата. Детский возраст до 18 лет. Перед применением рекомендуется проконсультироваться с врачом.",
+      "en": "Individual intolerance to drug components. Childhood up to 18 years old. Before use, it is recommended to consult a doctor."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang.\nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in original packaging.\nThe product should be stored in a place inaccessible to children and not used after expiration."
+    },
+    "description6": {
+      "uz": " 3 yil",
+      "ru": " 3 года",
+      "en": " 3 years"
+    },
+    "description_titles": {
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+
+  },
+  {
+    "name": {
+      "uz": "Rekup vivasam",
+      "ru": "Рекуп vivasam",
+      "en": "Rekup vivasam"
+    },
+    "specialty": {
+      "uz": "Rekup vivasam - bu tabiiy gepatoprotektor va antioksidantni o‘z ichiga olgan kombinatsiyalangan preparat. Barcha komponentlar sinergizm (bir-birining ta’sirini kuchaytirish) xususiyatiga ega.",
+      "ru": "Рекуп vivasam - это комбинированный препарат, содержащий натуральные гепатопротектор и антиоксидант. Все компоненты обладают синергизмом (усилением действия друг друга).",
+      "en": "Rekup vivasam is a combined drug containing a natural hepatoprotector and antioxidant. All components possess synergism (intensification of each other's actions)."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/images.jpeg","assets/img/health/images.jpeg","assets/img/health/images.jpeg"],
+    "description1": {
+      "uz": "Rekup vivasam.  Jigarni tiklash va tozalash uchun mo‘ljallangan gepatoprotektor vosita.",
+      "ru": "Рекуп vivasam.  Гепатопротекторное средство, предназначено для восстановления и очищения печени.",
+      "en": "Reкуп живееam.  A hepatoprotective agent designed to restore and cleanse the liver."
+    },
+    "description2": {
+      "uz": "Adenozilmetionin (ademetionin) jigarni himoya qiluvchi tabiiy modda bo‘lib, moddalar almashinuvini yaxshilaydi, safro oqimini faollashtiradi va asab tizimini qo‘llab-quvvatlaydi. U antidepressant xususiyatga ega, jigar hujayralarini toksinlardan himoya qiladi.\nGlutation — kuchli antioksidant bo‘lib, hujayralarni erkin radikallardan himoya qiladi, immunitetni mustahkamlaydi, qarishni sekinlashtiradi va asab hujayralarini himoya qiladi. Vitamin A, C, E faoliyatini tiklashga yordam beradi, jigarni tozalashda muhim rol o‘ynaydi.",
+      "ru": "Аденозилметионин (адеметионин)  - это натуральное вещество, которое защищает печень, улучшает обмен веществ, стимулирует желчеотток и поддерживает нервную систему. Он обладает антидепрессантными свойствами, защищая клетки печени от токсинов.\nГлутатион - мощный антиоксидант, который защищает клетки от свободных радикалов, укрепляет иммунитет, замедляет старение и защищает нервные клетки. Витамины А, С, Е способствуют восстановлению функции, играют важную роль в очищении печени.",
+      "en": "Adenosylmethionine (ademethionine)  is a natural liver-protective substance that improves metabolism, stimulates bile flow, and supports the nervous system. It has antidepressant properties, protecting liver cells from toxins.\nGlutathione is a powerful antioxidant, protecting cells from free radicals, strengthening the immune system, slowing down aging, and protecting nerve cells. Vitamins A, C, and E help restore function and play an important role in liver cleansing."
+    },
+    "description3": {
+      "uz": "Tabletkalar butunligicha, chaynamasdan, yaxshisi kunning birinchi yarmida ovqatlanish oralig‘ida ichiladi. Tavsiya etilgan sutkalik doza 2-4 tabletka. Davolash kursi 1 oydan 3 oygacha.",
+      "ru": "Таблетки принимают внутрь, целиком, не разжёвывая, желательно в первой половине дня между приёмами пищи. Рекомендуемая суточная доза составляет 2-4 таблетки. Курс лечения от 1 до 3 месяцев.",
+      "en": "Tablets are taken orally, whole, without chewing, preferably in the first half of the day between meals. The recommended daily dose is 2-4 tablets. The treatment course is from 1 to 3 months."
+    },
+    "description4": {
+      "uz": "Preparat komponentlarini individual ko‘tara olmaslik. Metionin sikliga ta’sir qiluvchi va/yoki gomotsistinuriya va/yoki gipergomotsisteinemiyaga olib keladigan genetik kasalliklar (sistationin beta sintaza yetishmovchiligi, B12 vitamini metabolizmining buzilishi); 18 yoshgacha bo‘lgan bolalar.",
+      "ru": "Индивидуальная непереносимость к компонентам препарата. Генетические нарушения, влияющие на метиониновый цикл, и/или вызывающие гомоцистинурию и/или гипергомоцистеинемию (дефицит цистатионин бета-синтазы, нарушение метаболизма витамина B12); детям до 18 лет.",
+      "en": "Individual intolerance to drug components. Genetic disorders affecting the methionine cycle and/or causing homocystinuria and/or hyperhomocysteinemia (cystathionine beta synthase deficiency, vitamin B12 metabolism disorder); children under 18."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang. \nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in the original packaging. \nThe medication should be stored in a place inaccessible to children and not used after its expiration date."
+    },
+    "description6": {
+      "uz": "3 yil.",
+      "ru": "3 года.",
+      "en": "3 years."
+    },
+        "description_titles": {
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Boulardi vivasam",
+      "ru": "Буларди vivasam",
+      "en": "Bulardi vivasam"
+    },
+    "specialty": {
+      "uz": "Boulardi vivasam tarkibida 300 mg Saccharomyces boulardii bo‘lgan probiotikdir.",
+      "ru": "Буларди vivasam - это пробиотик, содержащий 300 мг Saccharomyces boulardii.",
+      "en": "Bulardi vivasam is a probiotic containing 300 mg of Saccharomyces boulardii."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/tablet.png","assets/img/health/tablet.png","assets/img/health/tablet.png"],
+    "description1": {
+      "uz": "Bulardi vivasam ichak mikroflorasini normallashtiruvchi, diareyaga qarshi, mikroblarga qarshi ta’sir ko‘rsatadi. Diareyaga va mikroblarga qarshi ta’sirga ega immunobiologik preparat.",
+      "ru": "Буларди vivasam оказывает нормализующее микрофлору кишечника, антидиарейное, противомикробное действие. Иммунобиологический препарат с антидиарейным и противомикробным действием.",
+      "en": "Bulardi vivasam has normalizing intestinal microflora, antidiarrheal, and antimicrobial effects. Immunobiological preparation with antidiarrheal and antimicrobial action."
+    },
+    "description2": {
+      "uz": "Probiotiklar - bu foydali tirik mikroorganizmlar (ko‘pincha bifido yoki laktobakteriyalar), ichak mikroflorasini muvozanatlash va ovqat hazm qilishni yaxshilashga yordam beradi.\nSaccharomyces boulardii - tropik mevalardan ajratib olingan probiotik xamirturushlar bo‘lib, ichakdagi fermentlar faolligini oshiradi (laktoza, saxaroza va maltozaning hazm bo‘lishini 75-82% gacha yaxshilaydi), toksinlarga qarshi kurashadi va patogen bakteriyalarga qarshi tabiiy himoya beradi. Oshqozon shirasi ta’sirida parchalanmaydi, ichakka butun holda yetib boradi va antibiotiklarga chidamli hisoblanadi.",
+      "ru": "Probiotiklar — bu foydali tirik mikroorganizmlar (ko‘pincha bifido yoki laktobakteriyalar), ichak mikroflorasini muvozanatlash va ovqat hazm qilishni yaxshilashga yordam beradi.\nSaccharomyces boulardii — tropik mevalardan ajratilgan probiotik xamirturushlar bo‘lib, ichakdagi fermentlar faolligini oshiradi (laktoza, saxaroza va maltozaning hazm bo‘lishini 75–82% gacha yaxshilaydi), toksinlarga qarshi kurashadi va patogen bakteriyalarga qarshi tabiiy himoya beradi. Oshqozon shirasi ta’sirida yemirilmaydi, ichakka butun holatda yetib boradi va antibiotiklarga chidamli hisoblanadi.",
+      "en": "Probiotics are beneficial living microorganisms (often bifido or lactobacteria), helping to balance intestinal microflora and improve digestion.\nSaccharomyces boulardii - probiotic yeast isolated from tropical fruits, increases intestinal enzyme activity (improves digestion of lactose, sucrose and maltose by 75-82%), fights against toxins and provides natural protection against pathogenic bacteria. It is not destroyed by gastric juice, reaches the intestines intact, and is resistant to antibiotics."
+    },
+    "description3": {
+      "uz": "Boulardi vivasam ovqatdan keyin oz miqdorda suyuqlik bilan ichiladi.\n3 yoshgacha bo‘lgan bolalarga va butun kapsulani yuta olmaydigan bemorlarga kapsulani ochib, ichidagini qoshiqqa solib, ozgina suyuqlik bilan aralashtirish kerak. Yoki bunday holda sasheni qabul qilish mumkin.",
+      "ru": "Буларди vivasam принимают внутрь, после еды, запивая небольшим количеством жидкости.\nДетям до 3-х лет и пациентам, которые не могут проглотить целую капсулу, её необходимо вскрыть, содержимое высыпать в ложку и смешать с небольшим количеством жидкости. Либо можно принимать в виде саше в таком случае.",
+      "en": "Bulardi vivasam is taken orally, after meals, with a small amount of liquid.\nFor children under 3 years old and patients who cannot swallow a whole capsule, it should be opened, the contents poured into a spoon, and mixed with a small amount of liquid. Or it can be taken as a sash in such a case."
+    },
+    "description4": {
+      "uz": "Preparat komponentlarini individual ko‘tara olmaslik.",
+      "ru": "Индивидуальная непереносимость к компонентам препарата. ",
+      "en": "Individual intolerance to drug components."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang.\nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке.\nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in original packaging.\nThe product should be stored in a place inaccessible to children and not used after expiration."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": "3 года",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Renaliv vivasam",
+      "ru": "Реналив vivasam",
+      "en": "Renaliv vivasam"
+    },
+    "specialty": {
+      "uz": "Renaliv vivasam - bu tabiiy yallig‘lanishga qarshi va siydik haydovchi vositalarni o‘z ichiga olgan ko‘p komponentli preparat. Barcha komponentlar sinergizm (bir-birining ta’sirini kuchaytirish) xususiyatiga ega.",
+      "ru": "Реналив vivasam -это мультикомпонентный препарат, содержащий натуральные противовоспалительные и мочегонные средства. Все компоненты обладают синергизмом (усилением действия друг друга).",
+      "en": "Renaliv vivasam is a multicomponent preparation containing natural anti-inflammatory and diuretic agents. All components possess synergism (intensification of each other's actions)."
+    },
+
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/medicine.png","assets/img/medicine.png","assets/img/medicine.png"],
+    "description1": {
+      "uz": "Rinaliv vivasam. Buyrak toshlarini va buyrak yo‘llaridagi qumni eritish uchun qo‘llaniladi. Spazmolitik va siydik haydovchi ta’sir ko‘rsatadi, siydik toshlarining yumshashiga yordam beradi.",
+      "ru": "Риналив vivasam. Применяется для растворения почечных камней и песка из почечного тракта. Оказывает спазмолитическое и мочегонное действия, способствует разрыхлению мочевых конкрементов.",
+      "en": "Rinaliv vivasam. It is used to dissolve kidney stones and sand from the kidney tract. It has spasmolytic and diuretic effects, promotes the loosening of urine concretions."
+    },
+    "description2": {
+      "uz": "Pırey ildizi — yallig‘lanishga qarshi, siydik haydovchi, yumshoq ich suruvchi, teri faoliyatini yaxshilovchi va tuzlarni chiqaruvchi tabiiy vosita. Moddalar almashinuvini tiklaydi, yurak faoliyatini rag‘batlantiradi, charchoqni kamaytiradi, migrenni bartaraf etadi. Tarkibida C vitamini, karotin, polisaxaridlar va kremniy moddalar mavjud.Mannitol — kuchli diuretik bo‘lib, organizmdagi ortiqcha suyuqlikni (xususan, miya va ko‘z to‘qimalaridan) chiqaradi. Tana shishlarini kamaytiradi, suyuqlik aylanishini yaxshilaydi va natriy, xlorni chiqarib, kaliyni saqlaydi.",
+      "ru": "Корень пирея - натуральное противовоспалительное, мочегонное, мягкое слабительное, улучшающее функцию кожи и выводящее соли средство. Восстанавливает обмен веществ, стимулирует сердечную деятельность, снижает утомляемость и устраняет мигрень. Содержит витамин С, каротин, полисахариды и кремниевые вещества.Маннитол - мощный диуретик, который выводит из организма лишнюю жидкость (в частности, из тканей мозга и глаз). Уменьшает отеки в организме, улучшает циркуляцию жидкости и выводит натрий и хлор, сохраняя калий.",
+      "en": "Pırey root is a natural anti-inflammatory, diuretic, mild laxative, skin-enhancing, and salt-releasing remedy. Restores metabolism, stimulates heart activity, reduces fatigue, eliminates migraine. It contains vitamin C, carotene, polysaccharides, and silicon compounds.Mannitol is a powerful diuretic that removes excess fluid from the body (especially from brain and eye tissues). Reduces body swelling, improves fluid circulation, and removes sodium and chlorine while retaining potassium."
+    },
+    "description3": {
+      "uz": "Tavsiya etilgan doza 1 kapsuladan kuniga 3 marta; zarur bo‘lsa, dozani kuniga 4 kapsulagacha oshirish mumkin.\nKapsulalarni ovqatlanishdan qat’i nazar, butunligicha ichish va suv bilan ichish tavsiya etiladi.",
+      "ru": "Рекомендуемая доза составляет 1 капсуле 3 раза/сут; при необходимости доза может быть повышена до 4 капсул/сут.\nКапсулы рекомендуют принимать независимо от приёма пищи, проглатывать целиком, запивая водой.",
+      "en": "The recommended dose is 1 capsule 3 times/day; if necessary, the dose can be increased to 4 capsules/day.\nCapsules are recommended to be taken regardless of food intake, swallowed whole, and taken with water."
+    },
+    "description4": {
+      "uz": "Preparat komponentlarini individual ko‘tara olmaslik. 6 yoshgacha bo‘lgan bolalar yoshi. Surunkali buyrak yetishmovchiligi, buyrak filtratsiya funksiyasining buzilishi, chap qorincha yetishmovchiligi (ayniqsa o‘pka shishi bilan birga), gemorragik insult, subaraxnoidal qon ketishi (bosh suyagi trepanatsiyasi paytida qon ketishidan tashqari), degidratatsiyaning og‘ir shakllari, giponatriyemiya, gipoxloremiya, gipokaliyemiya, sudraluvchi bug‘doy yoki mannitolga yuqori sezuvchanlik. Qo‘llashdan oldin shifokor bilan maslahatlashish tavsiya etiladi.",
+      "ru": "Индивидуальная непереносимость к компонентам препарата. Детский возраст до 6 лет. Хроническая почечная недостаточность, нарушение фильтрационной функции почек, левожелудочковая недостаточность (особенно сопровождающаяся отёком лёгких), геморрагический инсульт, субарахноидальное кровоизлияние (кроме кровотечений во время трепанации черепа), тяжёлые формы дегидратации, гипонатриемия, гипохлоремия, гипокалиемия, повышенная чувствительность к пырею ползучему или к маннитолу. Перед применением рекомендуется проконсультироваться с врачом.",
+      "en": "Individual intolerance to drug components. Childhood up to 6 years. Chronic renal failure, impaired renal filtration function, left ventricular failure (especially accompanied by pulmonary edema), hemorrhagic stroke, subarachnoid hemorrhage (except for bleeding during skull trepanation), severe dehydration, hyponatremia, hypochloremia, hypokalemia, increased sensitivity to wheatgrass or mannitol. Before use, it is recommended to consult a doctor."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang.\nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке.\nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in original packaging.\nThe product should be stored in a place inaccessible to children and not used after expiration."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": "3 года.",
+      "en": "3 years."
+    },
+        "description_titles": {
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Yodosel vivasam",
+      "ru": "Йодосел vivasam",
+      "en": "Iodosel vivasam"
+    },
+    "specialty": {
+      "uz": "Yodosel vivasam - tarkibida mikroelementlar va vitamin V9 (folat kislota) bo‘lgan kompleks preparat.",
+      "ru": "Йодосел vivasam-это комплексный препарат, содержащий микроэлементы и витамин В9 (фолиевую кислоту).",
+      "en": "Iodosel vivasam is a complex drug containing microelements and vitamin B9 (folic acid)."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Yodosel jivayetam. Yod, folat kislota va selenning qo‘shimcha manbai sifatida ishlatiladi; qalqonsimon bezning funksional faolligini qo‘llab-quvvatlaydi.",
+      "ru": "Йодосел vivasam. Применяется в качестве дополнительного источника йода, фолиевой кислоты и селена; поддерживает функциональную активность щитовидной железы.",
+      "en": "Iodasel livesam. It is used as an additional source of iodine, folic acid, and selenium; it maintains the functional activity of the thyroid gland."
+    },
+    "description2": {
+      "uz": "Kaliy yodid — bu noorganik yod manbai bo‘lib, qalqonsimon bez gormonlari (T3 va T4) sintezi uchun zarur. Yod yetishmovchiligida bu jarayon buziladi, kaliy yodid esa bu tanqislikni bartaraf etib, gormon ishlab chiqarilishini tiklaydi. Ko‘p miqdorda esa qalqonsimon bez faolligini kamaytiradi.\nVitamin B9 (foliy kislotasi) — hujayra o‘sishi, qon hosil bo‘lishi va embrion rivojlanishi uchun zarur. Aqliy va jismoniy faollikni oshiradi, me’da kislotasini ko‘paytiradi.\nSelen — kuchli antioksidant bo‘lib, qarish jarayonini sekinlashtiradi, immunitetni kuchaytiradi, AYeTYe ishlab chiqarishda ishtirok etadi. Selen tanqisligi teri, soch, ko‘z va jigar muammolari, mushak zaifligi hamda qalqonsimon bez gormonlari ishlab chiqarilishiga salbiy ta’sir qiladi.",
+      "ru": "Йодид калия - это неорганический источник йода, необходимый для синтеза гормонов щитовидной железы (Т3 и Т4). При дефиците йода этот процесс нарушается, а йодид калия устраняет этот дефицит и восстанавливает выработку гормона. В больших количествах он снижает активность щитовидной железы.\nВитамин B9 (фолиевая кислота) необходим для роста клеток, кроветворения и развития эмбриона. Повышает умственную и физическую активность, увеличивает желудочную кислоту.\nСелен - мощный антиоксидант, замедляет старение, укрепляет иммунитет, участвует в выработке АЭТЕ. Дефицит селена отрицательно влияет на проблемы с кожей, волосами, глазами и печенью, мышечную слабость и выработку гормонов щитовидной железы.",
+      "en": "Potassium iodide is an inorganic source of iodine, necessary for the synthesis of thyroid hormones (T3 and T4). In iodine deficiency, this process is disrupted, and potassium iodide eliminates this deficiency and restores hormone production. In large quantities, it reduces thyroid activity.\nVitamin B9 (folic acid) is essential for cell growth, blood formation, and embryonic development. Increases mental and physical activity, increases stomach acid.\nSelen - a powerful antioxidant, slows down aging, boosts immunity, participates in the production of AETE. Selenium deficiency negatively affects skin, hair, eye and liver problems, muscle weakness, and thyroid hormone production."
+    },
+    "description3": {
+      "uz": "Kattalar va 12 yoshdan oshgan bolalarga kuniga 1 tabletkadan ovqatdan oldin yoki keyin ichish tavsiya etiladi.\nQabul qilish kursi - 1 oy. Zarur bo‘lsa, davolash kursini takrorlash mumkin.",
+      "ru": "Взрослым и детям старше 12 лет принимать по 1 таблетке внутрь в день до или после еды.\nКурс приёма- 1 месяц. При необходимости можно повторить курс лечения.",
+      "en": "Adults and children over 12 should take 1 tablet daily orally before or after meals.\nCourse - 1 month. If necessary, the treatment course can be repeated."
+    },
+    "description4": {
+      "uz": "BFQ komponentlarini individual ko‘tara olmaslik.",
+      "ru": "Индивидуальная непереносимость компонентов БАД. ",
+      "en": "Individual intolerance of dietary supplements."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang. \nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in the original packaging. \nThe medication should be stored in a place inaccessible to children and not used after its expiration date."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": " 3 года.",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Mag2 vivasam",
+      "ru": "Mag2 vivasam",
+      "en": "Mag2 vivasam"
+    },
+    "specialty": {
+      "en": "Mag2 vivasam. Magnesium pidolate is a form of magnesium used to compensate for magnesium deficiency in the body and treat related conditions. It can be helpful for nervousness, muscle spasms, sleep disturbances, and other symptoms caused by magnesium deficiency.",
+      "ru": "Mag2 vivasam. Магния пидолат - это форма магния, используемая для восполнения дефицита магния в организме и лечения связанных с ним состояний. Он может быть полезен при нервозности, мышечных спазмах, нарушениях сна и других симптомах, вызванных недостатком магния.",
+      "uz": "Mag2 vivasam. Magniy pidolat - organizmdagi magniy yetishmovchiligini to‘ldirish va u bilan bog‘liq kasalliklarni davolash uchun ishlatiladigan magniy shakli. U asabiylashish, mushaklar spazmi, uyqu buzilishi va magniy yetishmasligidan kelib chiqadigan boshqa alomatlarda foydali bo‘lishi mumkin."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Magniy eng muhim makroelement bo‘lib, 300 dan ortiq fermentativ reaksiyalarda ishtirok etadi, hujayralarning o‘tkazuvchanligi va nerv-muskul o‘tkazuvchanligini boshqaradi, ko‘pgina energetik jarayonlarni ta’minlash uchun zarur, oqsillar, yog‘lar, uglevodlar va nuklein kislotalar almashinuvida ishtirok etadi. Magniy nerv-muskul qo‘zg‘alishi jarayonida ishtirok etib, nerv-muskul o‘tkazuvchanligini susaytiradi.",
+      "ru": "Магний является важнейшим макроэлементом, принимает участие в более чем 300 ферментативных реакциях, регулирует проницаемость клеток и нервно-мышечную проводимость, необходим для обеспечения многих энергетических процессов, участвует в обмене белков, жиров, углеводов и нуклеиновых кислот. Магний принимает участие в процессе нервно-мышечного возбуждения, угнетая нервно-мышечную передачу. ",
+      "en": "Magnesium is an important macroelement, participates in more than 300 enzymatic reactions, regulates cell permeability and neuromuscular conductivity, is necessary for ensuring many energy processes, participates in the metabolism of proteins, fats, carbohydrates, and nucleic acids. Magnesium participates in the process of neuromuscular excitation, suppressing neuromuscular transmission."
+    },
+    "description2": {
+      "uz": "Магний - важный минерал для здоровой работы сердца, нервов, мышц и костей. Он выводится из организма в больших количествах во время стресса, поэтому добавление магния повышает стрессоустойчивость. Необходим для свертывания крови, выработки эстрогрена и работы кишечника.\nМагний участвует в выработке энергии (АТФ), улучшает усвоение витаминов группы В, обладает противовоспалительным, противоаллергическим и антитоксическим действием. Недостаток приводит к таким симптомам, как тревога, усталость, бессонница, головные боли и мышечный спазм.",
+      "ru": "Magniy — yurak, asab, mushak va suyaklarning sog‘lom ishlashi uchun muhim mineral. Stressda organizmdan ko‘p chiqib ketadi, shuning uchun qo‘shimcha magniy stressga chidamlilikni oshiradi. Qon ivishi, estrogren ishlab chiqarilishi va ichak faoliyati uchun zarur.\nMagniy energiya ishlab chiqarishda (ATP) ishtirok etadi, B guruhi vitaminlari o‘zlashuvini yaxshilaydi, yallig‘lanishga, allergiyaga va toksinlarga qarshi ta’sirga ega. Yetishmovchiligi xavotir, charchoq, uyqusizlik, bosh og‘riqlari, mushaklar spazmi kabi simptomlarga olib keladi.",
+      "en": "Magnesium is an important mineral for the healthy functioning of the heart, nerves, muscles, and bones. It is excreted from the body in large quantities during stress, therefore additional magnesium increases stress resistance. It is essential for blood clotting, estrogen production, and intestinal function.\nMagnesium participates in energy production (ATP), improves the absorption of B vitamins, and has anti-inflammatory, anti-allergic, and antitoxic effects. The deficiency leads to symptoms such as anxiety, fatigue, insomnia, headaches, and muscle spasms."
+    },
+    "description3": {
+      "uz": "Ichishga buyuriladi. 1 flakon yarim stakan suvda eritiladi.\nKattalar uchun odatiy doza kuniga 3-4 flakon bo‘lib, ovqat paytida 2 yoki 3 marta qabul qilinadi. \nTana vazni 12 kg dan yuqori bo‘lgan bolalar va chaqaloqlar uchun sutkalik doza: kuniga 1 kg vaznga 10 mg dan 30 mg gacha, ya’ni kuniga 1 dan 3 flakongacha, ovqatlanish paytida 1-3 qabulga bo‘lingan holda.",
+      "ru": "Применяется перорально. 1 флакон следует развести в половине стакана воды.\nОбычная доза для взрослых составляет 3-4 флакона в день, разделённых на 2 или 3 приёма во время еды. \nСуточная доза для детей и младенцев с массой тела более 12 кг: от 10 мг до 30 мг на 1 кг веса в сутки, то есть от 1 до 3 флаконов в день, разделённых на 1-3 приёма во время еды.",
+      "en": "It is taken orally. 1 bottle should be diluted in half a glass of water.\nThe usual dose for adults is 3-4 bottles per day, divided into 2 or 3 meals per day. \nDaily dose for children and infants with body weight over 12 kg: 10 mg to 30 mg per 1 kg of body weight per day, i.e., 1 to 3 vials per day, divided into 1-3 meals per day."
+    },
+    "description4": {
+      "uz": "Kamdan kam hollarda allergik reaksiyalar, sust ifodalangan dispepsiya va diareya hodisalari kuzatiladi.",
+      "ru": "B редких случаях аллергические реакции, слабовыраженные явления диспепсии и диареи. ",
+      "en": "In rare cases, allergic reactions, mild manifestations of dyspepsia and diarrhea."
+    },
+    "description5": {
+      "uz": "Toza, quruq, yaxshi shamollatiladigan xonalarda, yorug‘likdan himoyalangan joyda, +2°C dan +25°C gacha haroratda va 70% gacha nisbiy namlikda saqlanadi.",
+      "ru": "Хранить в чистых, сухих, хорошо проветриваемых помещениях, в защищённом от света месте, при температуре от +2 С до +25°С и относительной влажности до 70 %.",
+      "en": "Store in clean, dry, well-ventilated rooms, in a place protected from light, at a temperature of +2°C to +25°C and a relative humidity of up to 70%."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": " 3 года.",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Mensdol vivasam",
+      "ru": "Менсдол vivasam",
+      "en": "Mensdol vivasam"
+    },
+    "specialty": {
+      "uz": "Mensdol vivasam. Miomalar, endometrioz, mastopatiya, hayz siklining buzilishi, prostata adenomasi, OPV rivojlanishi, klimaksning og‘ir kechishida profilaktika va kompleks terapiya tarkibida.",
+      "ru": "Менсдол vivasam. Для профилактики и в составе комплексной терапии при миомах, эндометриозе, мастопатии, нарушениях менструального цикла, аденоме простаты, развитии ВПЧ, при тяжелом течении климакса.",
+      "en": "Mensdol vivasam. For prevention and as part of complex therapy in myomas, endometriosis, mastopathy, menstrual cycle disorders, prostate adenoma, HPV development, and severe menopause."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Mensdol vivasam - oziq-ovqat indollari guruhining o‘simliklardan olingan biologik faol moddasi.",
+      "ru": "Менсдол vivasam — биологически активное вещество растительного происхождения группы пищевых индолов. ",
+      "en": "Mensdol vivasam is a biologically active plant-derived substance of the food indole group."
+    },
+    "description2": {
+      "uz": "Indol-3-karbinol — xochsimon o‘simliklardan olinadigan tabiiy biofaol modda bo‘lib, ayollar sog‘lig‘i uchun ayniqsa foydalidir. U estrogenga bog‘liq o‘sma va mastopatiya holatlarida patologik hujayralarning o‘sishini to‘xtatishga yordam beradi.\nEstrogen almashinuvini tartibga soladi, hujayra retseptorlarini tiklaydi, virusli va xavfli o‘zgarishlarga qarshi kurashadi. Antioksidant ta’sirga ega, organizmni tozalash jarayonlarini faollashtiradi va hujayra qarishiga qarshi kurashadi.",
+      "ru": "Индол-3-карбинол - натуральное биологически активное вещество, получаемое из крестообразных растений, которое особенно полезно для женского здоровья. Он помогает подавлять рост патологических клеток при эстрогензависимых опухолях и мастопатии.\nРегулирует обмен эстрогенов, восстанавливает рецепторы клеток, борется с вирусными и злокачественными изменениями. Обладает антиоксидантным действием, активизирует процессы очищения организма и борется с клеточным старением.",
+      "en": "Indol-3-carbinol is a natural bioactive substance derived from cruciferous plants and is especially beneficial for women's health. It helps stop the growth of pathological cells in estrogen-dependent tumors and mastopathy.\nRegulates estrogen metabolism, restores cellular receptors, and fights viral and malignant changes. It has antioxidant effects, activates cleansing processes in the body, and fights cellular aging."
+    },
+    "description3": {
+      "en": "Mensdol vivasam capsules are taken 1-2 times a day during meals.\nCourse duration is 1 month.\nIf necessary, the procedure can be repeated.",
+      "ru": "Капсулы Менсдол vivasam принимают 1-2 раза в день во время еды.\nПродолжительность курса – 1 месяц.\nПри необходимости приём можно повторить.",
+      "uz": "Mensdol vivasam kapsulalari kuniga 1-2 marta ovqat paytida qabul qilinadi.\nKurs davomiyligi 1 oy.\nZarurat bo‘lsa, qabulni takrorlash mumkin."
+    },
+    "description4": {
+      "uz": "Kamdan-kam hollarda - oshqozon va ichakda yengil noqulaylik hissi, preparatni qabul qilgandan so‘ng darhol ko‘ngil aynishi, ular o‘z-o‘zidan yo‘qoladi.",
+      "ru": "Редко — ощущение легкого дискомфорта в желудке и кишечнике, тошнота непосредственно после применения препарата, которые исчезают самостоятельно. ",
+      "en": "Rarely - a slight discomfort in the stomach and intestines, nausea immediately after the use of the drug, which disappear on their own."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang. \nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in the original packaging. \nThe medication should be stored in a place inaccessible to children and not used after its expiration date."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": " 3 года.",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Pektilig vivasam",
+      "ru": "Пектилиг vivasam",
+      "en": "Pektilig vivasam"
+    },
+    "specialty": {
+      "en": "Pektilig vivasam is a polycomponent preparation containing natural enterosorbents and prebiotics, which cleanses the body, improves intestinal microflora, and strengthens immunity.",
+      "ru": "Пектилиг vivasam-это поликомпонентный препарат, содержащий натуральные энтеросорбенты и пребиотики, очищает организм, улучшает кишечную микрофлору и укрепляет иммунитет.",
+      "uz": "Pektilig vivasam - bu tabiiy enterosorbentlar va prebiotiklarni o‘z ichiga olgan polikomponent preparat bo‘lib, organizmni tozalaydi, ichak mikroflorasini yaxshilaydi va immunitetni mustahkamlaydi."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Pektilg vivasam. Ichak infeksiyalarida, turli zaharlar bilan zaharlanganda zararli moddalarning ichak orqali qonga so‘rilishiga to‘sqinlik qiladi.",
+      "ru": "Пектилг vivasam. При кишечных инфекциях или отравлении различными токсинами он препятствует всасыванию вредных веществ через кишечник в кровь.",
+      "en": "Pektilg vivasam. In cases of intestinal infections or poisoning with various toxins, it prevents the absorption of harmful substances into the blood through the intestines."
+    },
+    "description2": {
+      "uz": "Pektin, lignin, inulin, taurin, yantar kislotasi kabi tabiiy moddalarning kombinatsiyasi organizmni toksinlar, og‘ir metallar va allergenlardan tozalaydi, ichak florasini tiklaydi, immunitetni kuchaytiradi, yurak, jigar, asab va ovqat hazm qilish tizimi faoliyatini qo‘llab-quvvatlaydi, xolesterin va qon shakarini me’yorda ushlab turishga yordam beradi.",
+      "ru": "Сочетание природных веществ, таких как пектин, лигнин, инулин, таурин и янтарная кислота, очищает организм от токсинов, тяжелых металлов и аллергенов, восстанавливает кишечную флору, укрепляет иммунитет, поддерживает работу сердца, печени, нервной и пищеварительной систем, помогает поддерживать холестерин и уровень сахара в крови.",
+      "en": "The combination of natural substances such as pectin, lignin, inulin, taurine, and succinic acid cleanses the body of toxins, heavy metals, and allergens, restores intestinal flora, strengthens immunity, supports the functioning of the heart, liver, nervous system, and digestive system, and helps maintain cholesterol and blood sugar levels."
+    },
+    "description3": {
+      "uz": "Paketcha (sashening) tarkibini xona haroratidagi suvda suyultiring.Qattiq aralashtirib, sashe tarkibini 75-100 ml suvga 5 gramm (2 choy qoshiq) - 1 doza preparat hisobidan suvga soling. \nXona haroratidagi 50 ml suvda eritib, kattalar uchun kuniga 2-3 paket yoki 4-6 choy qoshiqdan ovqatdan bir soat oldin qabul qilish mumkin.",
+      "ru": "Разбавить содержимое пакетика (саше) в воде комнатной температуры.Интенсивно помешивая, всыпать содержимое саше в воду из расчёта 5 грамм (2 чайные ложки) - 1 дозу препарата на 75-100 мл воды. \nМожно развести в 50 мл воды комнатной температуры, принимать взрослым по 2-3 пакетика или 4-6 чайных ложек в день за один час до еды.",
+      "en": "Dissolve the package contents (sashé) in room temperature water.By vigorously stirring, add the sashé contents to the water at a rate of 5 grams (2 teaspoons) - 1 dose of the preparation per 75-100 ml of water. \nYou can dissolve it in 50 ml of room temperature water, take 2-3 packets or 4-6 teaspoons daily for adults one hour before meals."
+    },
+    "description4": {
+      "uz": "Preparat komponentlarini individual ko‘tara olmaslik, homiladorlik va emizish. Qo‘llashdan oldin shifokor bilan maslahatlashish tavsiya etiladi.",
+      "ru": "индивидуальная непереносимость к компонентам препарата, беременность и кормление грудью. Перед применением рекомендуется проконсультироваться с врачом.",
+      "en": "Individual intolerance to the components of the drug, pregnancy, and breastfeeding. Before use, it is recommended to consult a doctor."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang. \nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in the original packaging. \nThe medication should be stored in a place inaccessible to children and not used after its expiration date."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": " 3 года.",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Metapol vivasam",
+      "ru": "МЕТАПОЛ vivasam",
+      "en": "Metapol vivasam"
+    },
+    "specialty": {
+      "uz": "METAPOL vivasam - bu polikomponentli dori vositasi bo‘lib, o‘rtacha anabolik ta’sir ko‘rsatadi, ayrisimon bez faoliyatini rag‘batlantiradi, insulin sintezini rag‘batlantiradi va jismoniy mashqlar paytida qondagi glyukoza miqdorini tartibga soladi, kislota-ishqor muvozanatini tuzatishga yordam beradi.",
+      "ru": "МЕТАПОЛ vivasam - это поликомпонентный препарат оказывает умеренное анаболическое действие, стимулирует деятельность вилочковой железы, способствует синтезу инсулина и регулирует содержание глюкозы в крови во время физической нагрузки, способствует коррекции кислотно-щелочного равновесия. ",
+      "en": "METAPOL vivasam is a polycomponent drug that has a moderate anabolic effect, stimulates the activity of the thymus gland, promotes insulin synthesis, regulates blood glucose levels during physical activity, and contributes to the correction of acid-base balance."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Yurak va miya qon tomirlari aterosklerozi, periferik qon tomirlar aterosklerozi, shu jumladan vaqti-vaqti bilan oqsoqlanish belgilari bilan,\n-Diabetik angiopatiya, \n-Yurak ishemik kasalligi, \n-Arterial gipertenziya,",
+      "ru": "Атеросклероз сосудов сердца и головного мозга, атеросклероз периферических сосудов, в том числе с проявлениями перемежающейся хромоты,\n-Диабетическая ангиопатия, \n-Ишемическая болезнь сердца, \n-Артериальная гипертензия,",
+      "en": "Cardiovascular and cerebral atherosclerosis, peripheral vascular atherosclerosis, including with intermittent chronicity,\n-Diabetic angiopathy, \n-Heart ischemic disease, \n-Arterial hypertension,"
+    },
+    "description2": {
+      "uz": "L-arginin i gistidin - uslovno neobxodimie aminokisloti, podderjivayushiye deyatelnost serdechno-sosudistoy, nervnoy i immunnoy sistem. Energiya almashinuvi, jigarni tozalash, qon aylanishi va insulinga sezuvchanlikni yaxshilashda ishtirok etadi. Qon shakarini me’yorda ushlab turadi, qarishga, stressga va yurak kasalliklariga qarshi kurashadi. Sportchilar va surunkali kasalliklarda tiklanish jarayonida foydali.",
+      "ru": "L-аргинин и гистидин - условно необходимые аминокислоты, поддерживающие деятельность сердечно-сосудистой, нервной и иммунной систем. Участвует в энергетическом обмене, очищении печени, улучшении кровообращения и чувствительности к инсулину. Поддерживает уровень сахара в крови, борется со старением, стрессом и сердечными заболеваниями. Полезен для спортсменов и в процессе восстановления при хронических заболеваниях.",
+      "en": "L-arginine and histidine are essential amino acids that support the cardiovascular, nervous, and immune systems. It participates in energy metabolism, liver cleansing, blood circulation, and insulin sensitivity improvement. Maintains blood sugar levels, helps fight aging, stress, and heart disease. Beneficial for athletes and the recovery process in chronic diseases."
+    },
+    "description3": {
+      "uz": "Sashadagi kukun 1 stakan iliq suvda eritiladi va kuniga 1-2 marta ovqatdan keyin ichiladi.\nQabul qilish muddati - 1 oy. Zarur bo‘lganda usullarni takrorlash mumkin.",
+      "ru": "Порошок в саше растворяют в 1 стакане тёплой воды и пьют 1-2 раза в день после еды.\nСрок приёма - 1 месяц. При необходимости приём можно повторить. ",
+      "en": "The powder in the dish is dissolved in 1 cup of warm water and drunk 1-2 times a day after meals.\nAcceptance period - 1 month. If necessary, the technique can be repeated."
+    },
+    "description4": {
+      "uz": "Preparat komponentlariga individual ko‘tara olmaslik",
+      "ru": "индивидуальная непереносимость к компонентам препарата, беременность и кормление грудью (из-за недостаточности данных). Бронхиальная астма.",
+      "en": "Individual intolerance to the components of the drug, pregnancy, and breastfeeding. Before use, it is recommended to consult a doctor."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang. \nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in the original packaging. \nThe medication should be stored in a place inaccessible to children and not used after its expiration date."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": " 3 года.",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Inozit vivasam",
+      "ru": "Инозит vivasam",
+      "en": "Inozit vivasam"
+    },
+    "specialty": {
+      "uz": "Inozit vivasam tabiiy aminokislota, mikroelementlar va B9 vitamini (foliy kislotasi) ni o‘z ichiga olgan kompleks preparatdir.",
+      "ru": "Инозит vivasam - это комплексный препарат, содержащий натуральную аминокислоту, микроэлементы и витамин В9 (фолиевую кислоту).",
+      "en": "Inozit vivasam is a complex preparation containing natural amino acid, trace elements, and vitamin B9 (folic acid)."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Inozit hayotam. Gormonal muvozanat va ko‘payishning boshqarilishi.",
+      "ru": "Инозит vivasam. Регуляция гормонального баланса и репродукции.",
+      "en": "Inosit Livesam. Regulation of hormonal balance and reproduction."
+    },
+    "description2": {
+      "uz": "Inozitol, foliy kislotasi, tirozin, xrom, selen moddalari metabolik muvozanatni tiklash, ayollarda reproduktiv funksiyani qo‘llab-quvvatlash, insulin sezuvchanligini oshirish, yurak, asab va endokrin tizim faoliyatini yaxshilashga xizmat qiladi. Ular ovulyatsiyani tiklash, energiya almashinuvini faollashtirish, immunitetni mustahkamlash va gormonlar muvozanatini saqlashda yordam beradi. Stress, charchoq, ovqatlanish muvozanatsizligi va surunkali holatlarda qo‘llanilishi tavsiya etiladi.",
+      "ru": "Инозитол, фолий кислотаси, тирозин, хром, целен метаболизм мувозанатини тиклаш, аёлларда репродуктив функцияни қўллаб-қувватлаш, инсулинга сезувчанликни ошириш, юрак, нерв ва эндокрин тизимлари фаолиятини яхшилашга хизмат қилади. Улар овуляцияни тиклаш, энергия алмашинувини фаоллаштириш, иммунитетни мустаҳкамлаш ва гармонлар мувозанатини сақлашга хизмат қилади. Рекомендуется при стрессе, усталости, дисбалансе питания и хронических состояниях.",
+      "en": "Inozitol, folic acid, tyrosine, chromium, and selenium serve to restore metabolic balance, support reproductive function in women, increase insulin sensitivity, and improve the functioning of the heart, nervous system, and endocrine system. They help restore ovulation, activate energy metabolism, strengthen immunity, and maintain hormonal balance. It is recommended for use in stress, fatigue, nutritional imbalance, and chronic conditions."
+    },
+    "description3": {
+      "uz": "Paket tarkibini (sasheni) xona haroratidagi suvda eritish.\nKattalar uchun kuniga 1-2 paket yoki 2-4 choy qoshiqdan ovqatdan keyin 50 ml xona haroratidagi suvda eritish mumkin. Qabul qilish muddati - 1 oy. Zarur bo‘lsa, davolash kursini takrorlash mumkin.",
+      "ru": "Разбавить содержимое пакетика (саше) в воде комнатной температуры.\nМожно развести в 50 мл воды комнатной температуры, принимать взрослым по 1-2 пакетика  или 2-4 чайных ложек в день после еды. Курс приёма- 1 месяц. При необходимости можно повторить курс лечения.",
+      "en": "Dissolve the contents of the bag (sashé) in room temperature water.\nYou can dilute it in 50 ml of room temperature water. Adults can take 1-2 bags or 2-4 teaspoons a day after meals. The admission period is 1 month. If necessary, the treatment course can be repeated."
+    },
+    "description4": {
+      "uz": "BFQ komponentlarini individual ko‘tara olmaslik.",
+      "ru": "Индивидуальная непереносимость компонентов БАД. ",
+      "en": "Individual intolerance of dietary supplements."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang. \nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in the original packaging. \nThe medication should be stored in a place inaccessible to children and not used after its expiration date."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": " 3 года.",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  },
+  {
+    "name": {
+      "uz": "Yodokap vivasam",
+      "ru": "Йодокап vivasam",
+      "en": "Yodocap vivasam"
+    },
+    "specialty": {
+      "uz": "Yodokap vivasam - tarkibida mikroelementlar va V9 vitamini (foliy kislotasi) bo‘lgan kompleks preparat.",
+      "ru": "Йодокап vivasam-это комплексный препарат, содержащий микроэлементы и витамин В9 (фолиевую кислоту).",
+      "en": "Yodocap vivasam is a complex drug containing microelements and vitamin B9 (folic acid)."
+    },
+    "image": "assets/img/backup.jpg",
+    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "description1": {
+      "uz": "Yodokap vivasam. Uch tomchi suyuq yodda organizmning normal ishlashi uchun zarur bo‘lgan yodning sutkalik me’yori mavjud. Yod tanqisligi va organizm faoliyatidagi tegishli buzilishlarning oldini olish uchun muntazam ravishda suyuq yod qabul qilish tavsiya etiladi.",
+      "ru": "Йодокап vivasam. В трёх каплях Жидкого йода содержится суточная норма йода, необходимая организму для его нормального функционирования. Рекомендуется регулярный прием Жидкого йода для предотвращения йододефицита и соответствующих нарушений в работе организма.",
+      "en": "Iodokap livesam. Three drops of liquid iodine contain the daily amount of iodine necessary for the body's normal functioning. It is recommended to regularly take liquid iodine to prevent iodine deficiency and corresponding disorders in the body's function."
+    },
+    "description2": {
+      "uz": "Kaliy yodid, foliy kislotasi, sink kombinatsiyasi qalqonsimon bez gormonlarini me’yorda ushlab turadi, immunitetni kuchaytiradi, DNK sintezi va hujayra yangilanishiga yordam beradi. Asab tizimi, yurak, jigar va jinsiy sog‘likni qo‘llab-quvvatlaydi. Ayollarda sog‘lom homiladorlik, erkaklarda esa reproduktiv salohiyat va jismoniy kuchni oshirishga xizmat qiladi. Yod, folat va mikroelementlar tanqisligida, stress, charchoq va infeksiyalardan keyingi tiklanishda foydali.",
+      "ru": "Сочетание йодида калия, фолиевой кислоты и цинка поддерживает уровень гормонов щитовидной железы, укрепляет иммунитет и способствует синтезу ДНК и обновлению клеток. Поддерживает нервную систему, сердце, печень и сексуальное здоровье. Это способствует здоровой беременности у женщин и повышению репродуктивного потенциала и физической силы у мужчин. Полезно при дефиците йода, фолата и микроэлементов, стрессе, усталости и восстановлении после инфекций.",
+      "en": "The combination of potassium iodide, folic acid, and zinc maintains thyroid hormones in normal levels, strengthens immunity, and promotes DNA synthesis and cell renewal. It supports the nervous system, heart, liver, and sexual health. It serves to increase healthy pregnancy in women and reproductive potential and physical strength in men. Beneficial for iodine, folate, and microelement deficiencies, as well as recovery from stress, fatigue, and infections."
+    },
+    "description3": {
+      "uz": "Tug‘ilgandan bir yoshgacha bo‘lgan bolalar uchun - kuniga 50 mkg (1 tomchi) yod.\n- 1 yoshdan 7 yoshgacha - kuniga 100 mkg (2 tomchi) yod.\n- 7 yoshdan 12 yoshgacha - kuniga 150 mkg (3 tomchi) yod ovqatdan keyin ichiladi.\nQabul qilish kursi - 1 oy. Zarur bo‘lsa, davolash kursini takrorlash mumkin.",
+      "ru": "Детям с рождения до года - 50 мкг (1 капля) йода в сутки.\n- От 1 года до 7 - 100 мкг (2 капли) йода в сутки.\n- С 7 до 12 лет -150 мкг (3 капли) йода в сутки внутрь после еды.\nКурс приёма- 1 месяц. При необходимости можно повторить курс лечения.",
+      "en": "For children from birth to one year old - 50 mcg (1 drop) of iodine per day.\n- From 1 to 7 years old - 100 mcg (2 drops) of iodine per day.\n- From 7 to 12 years old - 150 mcg (3 drops) of iodine per day orally after meals.\nCourse - 1 month. If necessary, the treatment course can be repeated."
+    },
+    "description4": {
+      "uz": "BFQ komponentlarini individual ko‘tara olmaslik.",
+      "ru": "Индивидуальная непереносимость компонентов БАД. ",
+      "en": "Individual intolerance of dietary supplements."
+    },
+    "description5": {
+      "uz": "+25°C dan yuqori bo‘lmagan haroratda, asl qadoqda saqlang. \nDori vositasi bolalar qo‘li yetmaydigan joyda saqlanishi va yaroqlilik muddati tugaganidan keyin ishlatilmasligi kerak.",
+      "ru": "Хранить при температуре не выше +25°С, в оригинальной упаковке. \nПрепарат следует хранить в недоступном для детей месте и не использовать по истечении срока годности.",
+      "en": "Store at a temperature not exceeding +25°C, in the original packaging. \nThe medication should be stored in a place inaccessible to children and not used after its expiration date."
+    },
+    "description6": {
+      "uz": "3 yil",
+      "ru": " 3 года.",
+      "en": "3 years"
+    },
+    "description_titles": {
+      "second": {
+        "en": "Beneficial properties:",
+        "ru": "Полезные свойства:",
+        "uz": "Foydali xususiyatlari:"
+      },
+      "first": {
+        "uz": "Tavsif:",
+        "ru": "Описание:",
+        "en": "Description:"
+      },
+      "third": {
+        "uz": "Foydalanish bo'yicha ko'rsatmalar:",
+        "ru": "Способ применения:",
+        "en": "Directions for use:"
+      },
+      "fourth": {
+        "uz": "Qo'llash mumkin bo'lmagan holatlar:",
+        "ru": "Противопоказания:",
+        "en": "Contraindications:"
+      },
+      "fifth": {
+        "uz": "Saqlash shartlari:",
+        "ru": "Условия хранения:",
+        "en": "Storage conditions:"
+      },
+      "sixth": {
+        "uz": "Yaroqlilik muddati:",
+        "ru": "Срок годности:",
+        "en": "Expiration date:"
+      }
+    }
+  }
+]
+
