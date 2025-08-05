@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Test - VIVASAM</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons - Multiple sources for fallback -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        body {
+            padding: 2rem;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .icon-test {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+        }
+        
+        .icon-container {
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, #01C0E4, #33D1F0);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+        }
+        
+        .bi::before {
+            display: inline-block;
+            font-family: bootstrap-icons !important;
+            font-style: normal;
+            font-weight: normal !important;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            vertical-align: -.125em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        i[class^="bi-"], i[class*=" bi-"] {
+            font-family: bootstrap-icons !important;
+            font-style: normal;
+            font-weight: normal !important;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Icons Test</h1>
+        <p>This page tests if Bootstrap Icons are loading correctly.</p>
+        
+        <div class="icon-test">
+            <div class="icon-container">
+                <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+                <strong>Shield Check Icon</strong><br>
+                <small>Quality Certified</small>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <div class="icon-container">
+                <i class="bi bi-leaf"></i>
+            </div>
+            <div>
+                <strong>Leaf Icon</strong><br>
+                <small>Natural Ingredients</small>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <div class="icon-container">
+                <i class="bi bi-award"></i>
+            </div>
+            <div>
+                <strong>Award Icon</strong><br>
+                <small>Scientifically Proven</small>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <div class="icon-container">
+                <i class="bi bi-heart-pulse"></i>
+            </div>
+            <div>
+                <strong>Heart Pulse Icon</strong><br>
+                <small>Health Focused</small>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <div class="icon-container">
+                <i class="bi bi-telephone"></i>
+            </div>
+            <div>
+                <strong>Telephone Icon</strong><br>
+                <small>Contact Us</small>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <div class="icon-container">
+                <i class="bi bi-geo-alt"></i>
+            </div>
+            <div>
+                <strong>Location Icon</strong><br>
+                <small>Find Us</small>
+            </div>
+        </div>
+        
+        <div class="icon-test">
+            <div class="icon-container">
+                <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+                <strong>Envelope Icon</strong><br>
+                <small>Email Us</small>
+            </div>
+        </div>
+        
+        <hr class="my-4">
+        
+        <h3>Social Media Icons</h3>
+        
+        <div class="d-flex gap-3">
+            <div class="icon-container">
+                <i class="bi bi-instagram"></i>
+            </div>
+            <div class="icon-container">
+                <i class="bi bi-facebook"></i>
+            </div>
+            <div class="icon-container">
+                <i class="bi bi-telegram"></i>
+            </div>
+            <div class="icon-container">
+                <i class="bi bi-youtube"></i>
+            </div>
+        </div>
+        
+        <div class="mt-4">
+            <a href="index_new.html" class="btn btn-primary">
+                <i class="bi bi-arrow-left me-2"></i>Back to Main Site
+            </a>
+        </div>
+    </div>
+</body>
+</html>

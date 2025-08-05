@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - VIVASAM</title>
+    <meta name="description" content="Detailed information about VIVASAM natural supplements and health products.">
+    
+    <!-- Favicon -->
+    <link href="assets/img/logo.jpg" rel="icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <style>
+        .product-hero {
+            padding-top: 8rem;
+            padding-bottom: 4rem;
+            background: linear-gradient(135deg, 
+                rgba(1, 192, 228, 0.05) 0%, 
+                rgba(1, 192, 228, 0.1) 100%);
+        }
+        
+        .product-gallery {
+            max-height: 500px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .product-gallery .swiper-slide img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .product-details-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+        }
+        
+        .product-title {
+            color: var(--dark);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-section h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgba(1, 192, 228, 0.2);
+            padding-bottom: 0.5rem;
+        }
+        
+        .product-section p {
+            line-height: 1.7;
+            color: var(--gray-700);
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-section ul {
+            padding-left: 1.5rem;
+        }
+        
+        .product-section li {
+            margin-bottom: 0.5rem;
+            color: var(--gray-700);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .back-link:hover {
+            color: var(--primary-dark);
+            transform: translateX(-0.25rem);
+        }
+        
+        .product-navigation {
+            background: var(--white);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--gray-200);
+            margin-bottom: 2rem;
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .breadcrumb-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: var(--gray-600);
+        }
+        
+        .contact-cta {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .contact-cta h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-cta .btn {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            font-weight: 600;
+        }
+        
+        .contact-cta .btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-0.125rem);
+        }
+        
+        /* Fix for feature icons */
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, #01C0E4, #33D1F0);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        
+        .feature-icon i {
+            font-size: 1.25rem;
+            color: white;
+        }
+        
+        /* Ensure Bootstrap Icons are loaded properly */
+        .bi::before {
+            display: inline-block;
+            font-family: bootstrap-icons !important;
+            font-style: normal;
+            font-weight: normal !important;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            vertical-align: -.125em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Additional icon fixes */
+        i.bi {
+            font-family: bootstrap-icons !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            display: inline-block;
+            line-height: 1;
+        }
+        
+        /* Fallback for missing icons */
+        .feature-item i:empty::after {
+            content: "✓";
+            font-family: Arial, sans-serif;
+        }
+        
+        .feature-item:nth-child(2) i:empty::after {
+            content: "🌿";
+        }
+        
+        .feature-item:nth-child(3) i:empty::after {
+            content: "🏆";
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.jpg" alt="VIVASAM" class="logo-img me-2">
+                <span class="brand-text">VIVASAM</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="language-select" class="form-select form-select-sm ms-3">
+                            <option value="en">English</option>
+                            <option value="ru" selected>Русский</option>
+                            <option value="uz">O'zbek</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Navigation -->
+    <div class="product-navigation">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="index.html#products">Products</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page" id="product-breadcrumb">
+                        Product Details
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="product-gallery">
+                        <div class="swiper product-swiper">
+                            <div class="swiper-wrapper" id="product-images">
+                                <!-- Images will be loaded dynamically -->
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="product-details-card">
+                        <h1 class="product-title" id="product-name">Product Name</h1>
+                        <p class="lead" id="product-specialty">Product specialty description</p>
+                        
+                        <div class="product-features mt-4">
+                            <div class="feature-item d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <span>Quality Certified</span>
+                            </div>
+                            <div class="feature-item d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="bi bi-leaf"></i>
+                                </div>
+                                <span>Natural Ingredients</span>
+                            </div>
+                            <div class="feature-item d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <span>Scientifically Proven</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Description -->
+                    <div class="product-details-card" data-aos="fade-up">
+                        <div class="product-section">
+                            <h5 id="description-title">Description</h5>
+                            <div id="product-description">
+                                <!-- Description content will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Indications -->
+                    <div class="product-details-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-section">
+                            <h5 id="indications-title">Indications</h5>
+                            <div id="product-indications">
+                                <!-- Indications content will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contraindications -->
+                    <div class="product-details-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-section">
+                            <h5 id="contraindications-title">Contraindications</h5>
+                            <div id="product-contraindications">
+                                <!-- Contraindications content will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Storage -->
+                    <div class="product-details-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-section">
+                            <h5 id="storage-title">Storage</h5>
+                            <div id="product-storage">
+                                <!-- Storage content will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Quick Info Card -->
+                    <div class="product-details-card sticky-top" style="top: 100px;" data-aos="fade-left">
+                        <h5 class="text-center mb-4">Product Information</h5>
+                        
+                        <div class="info-item d-flex justify-content-between align-items-center py-2 border-bottom">
+                            <span class="fw-medium">Shelf Life:</span>
+                            <span id="product-shelf-life">3 years</span>
+                        </div>
+                        
+                        <div class="info-item d-flex justify-content-between align-items-center py-2 border-bottom">
+                            <span class="fw-medium">Type:</span>
+                            <span>Natural Supplement</span>
+                        </div>
+                        
+                        <div class="info-item d-flex justify-content-between align-items-center py-2">
+                            <span class="fw-medium">Category:</span>
+                            <span>Health & Wellness</span>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="index.html#contact" class="btn btn-primary w-100 mb-3">
+                                <i class="bi bi-telephone me-2"></i>Contact for Details
+                            </a>
+                            <a href="index.html#products" class="btn btn-outline-primary w-100">
+                                <i class="bi bi-arrow-left me-2"></i>Back to Products
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="contact-cta" data-aos="fade-up">
+                <h4>Interested in This Product?</h4>
+                <p>Get in touch with our experts for personalized recommendations and detailed information.</p>
+                <a href="index.html#contact" class="btn btn-lg">
+                    <i class="bi bi-chat-dots me-2"></i>Contact Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="assets/img/logo.jpg" alt="VIVASAM" class="footer-logo mb-3">
+                        <p class="brand-tagline">Foundation of Health</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            <span>Tashkent, Yakkasaray district, Babur street 73 A</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-telephone me-2"></i>
+                            <span>+1 (555) 987-6543</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-envelope me-2"></i>
+                            <span>Vivasam-group@mail.ru</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/vivasam.group" target="_blank" class="social-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100088411987053" target="_blank" class="social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://t.me/vivasamgroup" target="_blank" class="social-link">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                        <a href="https://youtube.com/@vivasamgroup?si=4iqNknhEHCJZ28js" target="_blank" class="social-link">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="copyright mb-0">
+                        © 2022 VIVASAM Group. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        class ProductPage {
+            constructor() {
+                this.currentLanguage = localStorage.getItem('selectedLanguage') || 'ru';
+                this.productIndex = this.getProductIndex();
+                this.init();
+            }
+
+            init() {
+                this.initAOS();
+                this.initLanguageSelector();
+                this.loadProductData();
+                this.initScrollBehavior();
+            }
+
+            initAOS() {
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({
+                        duration: 800,
+                        easing: 'ease-in-out',
+                        once: true,
+                        offset: 50
+                    });
+                }
+            }
+
+            getProductIndex() {
+                const urlParams = new URLSearchParams(window.location.search);
+                return parseInt(urlParams.get('index')) || 0;
+            }
+
+            initLanguageSelector() {
+                const languageSelect = document.getElementById('language-select');
+                languageSelect.value = this.currentLanguage;
+                
+                languageSelect.addEventListener('change', (e) => {
+                    this.currentLanguage = e.target.value;
+                    localStorage.setItem('selectedLanguage', this.currentLanguage);
+                    this.loadProductData();
+                });
+            }
+
+            async loadProductData() {
+                try {
+                    const response = await fetch('data/products.json');
+                    const products = await response.json();
+                    const product = products[this.productIndex];
+                    
+                    if (product) {
+                        this.renderProduct(product);
+                    } else {
+                        this.showProductNotFound();
+                    }
+                } catch (error) {
+                    console.error('Error loading product data:', error);
+                    this.showFallbackProduct();
+                }
+            }
+
+            renderProduct(product) {
+                const lang = this.currentLanguage;
+                
+                // Update product name and breadcrumb
+                document.getElementById('product-name').textContent = product.name?.[lang] || product.name?.ru || 'Product';
+                document.getElementById('product-breadcrumb').textContent = product.name?.[lang] || product.name?.ru || 'Product';
+                document.getElementById('product-specialty').textContent = product.specialty?.[lang] || product.specialty?.ru || '';
+                
+                // Update images
+                this.renderProductImages(product.images || []);
+                
+                // Update descriptions
+                this.updateContent('product-description', product.description1?.[lang] || product.description1?.ru || '');
+                this.updateContent('product-indications', product.description3?.[lang] || product.description3?.ru || '');
+                this.updateContent('product-contraindications', product.description4?.[lang] || product.description4?.ru || '');
+                this.updateContent('product-storage', product.description5?.[lang] || product.description5?.ru || '');
+                
+                // Update shelf life
+                document.getElementById('product-shelf-life').textContent = product.description6?.[lang] || product.description6?.ru || '3 years';
+                
+                // Update page title
+                document.title = `${product.name?.[lang] || product.name?.ru || 'Product'} - VIVASAM`;
+            }
+
+            renderProductImages(images) {
+                const container = document.getElementById('product-images');
+                
+                if (images.length === 0) {
+                    images = ['assets/img/medicine.png'];
+                }
+                
+                container.innerHTML = images.map(img => `
+                    <div class="swiper-slide">
+                        <img src="${img}" alt="Product Image" class="img-fluid">
+                    </div>
+                `).join('');
+                
+                // Initialize Swiper
+                if (typeof Swiper !== 'undefined') {
+                    new Swiper('.product-swiper', {
+                        loop: true,
+                        autoplay: {
+                            delay: 4000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        effect: 'fade',
+                        fadeEffect: {
+                            crossFade: true
+                        }
+                    });
+                }
+            }
+
+            updateContent(elementId, content) {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    // Convert newlines to paragraphs
+                    const paragraphs = content.split('\n').filter(p => p.trim())
+                        .map(p => `<p>${p.trim()}</p>`).join('');
+                    element.innerHTML = paragraphs;
+                }
+            }
+
+            showProductNotFound() {
+                document.getElementById('product-name').textContent = 'Product Not Found';
+                document.getElementById('product-specialty').textContent = 'The requested product could not be found.';
+                document.getElementById('product-description').innerHTML = '<p>Please return to the products page to view available items.</p>';
+            }
+
+            showFallbackProduct() {
+                document.getElementById('product-name').textContent = 'Natural Supplement';
+                document.getElementById('product-specialty').textContent = 'Premium natural health supplement';
+                document.getElementById('product-description').innerHTML = '<p>High-quality natural supplement for optimal health and wellness.</p>';
+            }
+
+            initScrollBehavior() {
+                const navbar = document.getElementById('mainNav');
+                
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 100) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+
+                // Back to top button
+                const backToTopButton = document.getElementById('back-to-top');
+                
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTopButton.classList.add('show');
+                    } else {
+                        backToTopButton.classList.remove('show');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new ProductPage();
+        });
+    </script>
+</body>
+</html>
