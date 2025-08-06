@@ -88,7 +88,7 @@
       "en": "Rekup vivasam is a combined drug containing a natural hepatoprotector and antioxidant. All components possess synergism (intensification of each other's actions)."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/products/rekup/1.png","assets/imgproducts//rekup/2.png","assets/improducts/g/rekup/3.png"],
+    "images": ["assets/img/products/rekup/1.png","assets/img/products/rekup/2.png","assets/img/products/rekup/3.png"],
     "description1": {
       "uz": "Rekup vivasam.  Jigarni tiklash va tozalash uchun mo‘ljallangan gepatoprotektor vosita.",
       "ru": "Рекуп vivasam.  Гепатопротекторное средство, предназначено для восстановления и очищения печени.",
@@ -164,7 +164,7 @@
       "en": "Bulardi vivasam is a probiotic containing 300 mg of Saccharomyces boulardii."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/products/bulardi/1.png","assets/iproducts/mg/bulardi/2.png","assetproducts/s/img/bulardi/3.png"],
+    "images": ["assets/img/products/bulardi/1.png","assets/img/products/bulardi/2.png","assets/img/products/bulardi/3.png"],
     "description1": {
       "uz": "Bulardi vivasam ichak mikroflorasini normallashtiruvchi, diareyaga qarshi, mikroblarga qarshi ta’sir ko‘rsatadi. Diareyaga va mikroblarga qarshi ta’sirga ega immunobiologik preparat.",
       "ru": "Буларди vivasam оказывает нормализующее микрофлору кишечника, антидиарейное, противомикробное действие. Иммунобиологический препарат с антидиарейным и противомикробным действием.",
@@ -241,7 +241,7 @@
     },
 
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/products/renaliv/1.png","assets/iproducts/mg/renaliv/2.png","assetproducts/s/img/renaliv/3.png"],
+    "images": ["assets/img/products/renaliv/1.png","assets/img/products/renaliv/2.png","assets/img/products/renaliv/3.png"],
     "description1": {
       "uz": "Rinaliv vivasam. Buyrak toshlarini va buyrak yo‘llaridagi qumni eritish uchun qo‘llaniladi. Spazmolitik va siydik haydovchi ta’sir ko‘rsatadi, siydik toshlarining yumshashiga yordam beradi.",
       "ru": "Риналив vivasam. Применяется для растворения почечных камней и песка из почечного тракта. Оказывает спазмолитическое и мочегонное действия, способствует разрыхлению мочевых конкрементов.",
@@ -317,7 +317,7 @@
       "en": "Iodosel vivasam is a complex drug containing microelements and vitamin B9 (folic acid)."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/products/yodosel/1.png","assets/iproducts/mg/yodosel/2.png","assetproducts/s/img/yodosel/3.png"],
+    "images": ["assets/img/products/yodosel/1.png","assets/img/products/yodosel/2.png","assets/img/products/yodosel/3.png"],
     "description1": {
       "uz": "Yodosel jivayetam. Yod, folat kislota va selenning qo‘shimcha manbai sifatida ishlatiladi; qalqonsimon bezning funksional faolligini qo‘llab-quvvatlaydi.",
       "ru": "Йодосел vivasam. Применяется в качестве дополнительного источника йода, фолиевой кислоты и селена; поддерживает функциональную активность щитовидной железы.",
