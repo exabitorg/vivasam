@@ -11,7 +11,7 @@
       "en": "Variks vivasam is a polycomponent preparation containing natural angioprotectors, venotonics, and antioxidants. All components have synergism (intensification of each other's actions)."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/images.jpeg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/varix/1.png","assets/img/products/varix/2.png","assets/img/products/varix/3.png"],
     "description1": {
       "uz": "Variks vivasam.  Angioprotektorlar guruhiga kiruvchi va vena kasalliklarini davolash va oldini olish uchun qo‘llaniladigan preparat.",
       "ru": "Варикс vivasam.  Препарат, который относится к группе ангиопротекторов и применяется для лечения и профилактики заболеваний вен.",
@@ -88,7 +88,7 @@
       "en": "Rekup vivasam is a combined drug containing a natural hepatoprotector and antioxidant. All components possess synergism (intensification of each other's actions)."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/images.jpeg","assets/img/health/images.jpeg","assets/img/health/images.jpeg"],
+    "images": ["assets/img/products/rekup/1.png","assets/imgproducts//rekup/2.png","assets/improducts/g/rekup/3.png"],
     "description1": {
       "uz": "Rekup vivasam.  Jigarni tiklash va tozalash uchun mo‘ljallangan gepatoprotektor vosita.",
       "ru": "Рекуп vivasam.  Гепатопротекторное средство, предназначено для восстановления и очищения печени.",
@@ -164,7 +164,7 @@
       "en": "Bulardi vivasam is a probiotic containing 300 mg of Saccharomyces boulardii."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/tablet.png","assets/img/health/tablet.png","assets/img/health/tablet.png"],
+    "images": ["assets/img/products/bulardi/1.png","assets/iproducts/mg/bulardi/2.png","assetproducts/s/img/bulardi/3.png"],
     "description1": {
       "uz": "Bulardi vivasam ichak mikroflorasini normallashtiruvchi, diareyaga qarshi, mikroblarga qarshi ta’sir ko‘rsatadi. Diareyaga va mikroblarga qarshi ta’sirga ega immunobiologik preparat.",
       "ru": "Буларди vivasam оказывает нормализующее микрофлору кишечника, антидиарейное, противомикробное действие. Иммунобиологический препарат с антидиарейным и противомикробным действием.",
@@ -241,7 +241,7 @@
     },
 
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/medicine.png","assets/img/medicine.png","assets/img/medicine.png"],
+    "images": ["assets/img/products/renaliv/1.png","assets/iproducts/mg/renaliv/2.png","assetproducts/s/img/renaliv/3.png"],
     "description1": {
       "uz": "Rinaliv vivasam. Buyrak toshlarini va buyrak yo‘llaridagi qumni eritish uchun qo‘llaniladi. Spazmolitik va siydik haydovchi ta’sir ko‘rsatadi, siydik toshlarining yumshashiga yordam beradi.",
       "ru": "Риналив vivasam. Применяется для растворения почечных камней и песка из почечного тракта. Оказывает спазмолитическое и мочегонное действия, способствует разрыхлению мочевых конкрементов.",
@@ -317,7 +317,7 @@
       "en": "Iodosel vivasam is a complex drug containing microelements and vitamin B9 (folic acid)."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/yodosel/1.png","assets/iproducts/mg/yodosel/2.png","assetproducts/s/img/yodosel/3.png"],
     "description1": {
       "uz": "Yodosel jivayetam. Yod, folat kislota va selenning qo‘shimcha manbai sifatida ishlatiladi; qalqonsimon bezning funksional faolligini qo‘llab-quvvatlaydi.",
       "ru": "Йодосел vivasam. Применяется в качестве дополнительного источника йода, фолиевой кислоты и селена; поддерживает функциональную активность щитовидной железы.",
@@ -393,7 +393,7 @@
       "uz": "Mag2 vivasam. Magniy pidolat - organizmdagi magniy yetishmovchiligini to‘ldirish va u bilan bog‘liq kasalliklarni davolash uchun ishlatiladigan magniy shakli. U asabiylashish, mushaklar spazmi, uyqu buzilishi va magniy yetishmasligidan kelib chiqadigan boshqa alomatlarda foydali bo‘lishi mumkin."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/mag2/1.png","assets/img/products/mag2/2.png","assets/img/products/mag2/3.png"],
     "description1": {
       "uz": "Magniy eng muhim makroelement bo‘lib, 300 dan ortiq fermentativ reaksiyalarda ishtirok etadi, hujayralarning o‘tkazuvchanligi va nerv-muskul o‘tkazuvchanligini boshqaradi, ko‘pgina energetik jarayonlarni ta’minlash uchun zarur, oqsillar, yog‘lar, uglevodlar va nuklein kislotalar almashinuvida ishtirok etadi. Magniy nerv-muskul qo‘zg‘alishi jarayonida ishtirok etib, nerv-muskul o‘tkazuvchanligini susaytiradi.",
       "ru": "Магний является важнейшим макроэлементом, принимает участие в более чем 300 ферментативных реакциях, регулирует проницаемость клеток и нервно-мышечную проводимость, необходим для обеспечения многих энергетических процессов, участвует в обмене белков, жиров, углеводов и нуклеиновых кислот. Магний принимает участие в процессе нервно-мышечного возбуждения, угнетая нервно-мышечную передачу. ",
@@ -469,7 +469,7 @@
       "en": "Mensdol vivasam. For prevention and as part of complex therapy in myomas, endometriosis, mastopathy, menstrual cycle disorders, prostate adenoma, HPV development, and severe menopause."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/mensdol/1.png","assets/img/products/mensdol/2.png","assets/img/products/mensdol/3.png"],
     "description1": {
       "uz": "Mensdol vivasam - oziq-ovqat indollari guruhining o‘simliklardan olingan biologik faol moddasi.",
       "ru": "Менсдол vivasam — биологически активное вещество растительного происхождения группы пищевых индолов. ",
@@ -545,7 +545,7 @@
       "uz": "Pektilig vivasam - bu tabiiy enterosorbentlar va prebiotiklarni o‘z ichiga olgan polikomponent preparat bo‘lib, organizmni tozalaydi, ichak mikroflorasini yaxshilaydi va immunitetni mustahkamlaydi."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/pektilig/1.png","assets/img/products/pektilig/2.png","assets/img/products/pektilig/3.png"],
     "description1": {
       "uz": "Pektilg vivasam. Ichak infeksiyalarida, turli zaharlar bilan zaharlanganda zararli moddalarning ichak orqali qonga so‘rilishiga to‘sqinlik qiladi.",
       "ru": "Пектилг vivasam. При кишечных инфекциях или отравлении различными токсинами он препятствует всасыванию вредных веществ через кишечник в кровь.",
@@ -621,7 +621,7 @@
       "en": "METAPOL vivasam is a polycomponent drug that has a moderate anabolic effect, stimulates the activity of the thymus gland, promotes insulin synthesis, regulates blood glucose levels during physical activity, and contributes to the correction of acid-base balance."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/metapol/1.png","assets/img/products/metapol/2.png","assets/img/products/metapol/3.png"],
     "description1": {
       "uz": "Yurak va miya qon tomirlari aterosklerozi, periferik qon tomirlar aterosklerozi, shu jumladan vaqti-vaqti bilan oqsoqlanish belgilari bilan,\n-Diabetik angiopatiya, \n-Yurak ishemik kasalligi, \n-Arterial gipertenziya,",
       "ru": "Атеросклероз сосудов сердца и головного мозга, атеросклероз периферических сосудов, в том числе с проявлениями перемежающейся хромоты,\n-Диабетическая ангиопатия, \n-Ишемическая болезнь сердца, \n-Артериальная гипертензия,",
@@ -697,7 +697,7 @@
       "en": "Inozit vivasam is a complex preparation containing natural amino acid, trace elements, and vitamin B9 (folic acid)."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/inozit/1.png","assets/img/products/inozit/2.png","assets/img/products/inozit/3.png"],
     "description1": {
       "uz": "Inozit hayotam. Gormonal muvozanat va ko‘payishning boshqarilishi.",
       "ru": "Инозит vivasam. Регуляция гормонального баланса и репродукции.",
@@ -773,7 +773,7 @@
       "en": "Yodocap vivasam is a complex drug containing microelements and vitamin B9 (folic acid)."
     },
     "image": "assets/img/backup.jpg",
-    "images": ["assets/img/health/file.jpg","assets/img/health/file.jpg","assets/img/health/file.jpg"],
+    "images": ["assets/img/products/yodokap/1.png","assets/img/products/yodokap/2.png","assets/img/products/yodokap/3.png"],
     "description1": {
       "uz": "Yodokap vivasam. Uch tomchi suyuq yodda organizmning normal ishlashi uchun zarur bo‘lgan yodning sutkalik me’yori mavjud. Yod tanqisligi va organizm faoliyatidagi tegishli buzilishlarning oldini olish uchun muntazam ravishda suyuq yod qabul qilish tavsiya etiladi.",
       "ru": "Йодокап vivasam. В трёх каплях Жидкого йода содержится суточная норма йода, необходимая организму для его нормального функционирования. Рекомендуется регулярный прием Жидкого йода для предотвращения йододефицита и соответствующих нарушений в работе организма.",
