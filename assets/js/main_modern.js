@@ -22,6 +22,9 @@
             getInTouch: 'Get in Touch',
             quickContact: 'Quick Contact',
             aboutTitle: 'About VIVASAM Group',
+            lead: "Vivasam Group is a modern manufacturer of dietary supplements that will enter the market in 2022. In a short period of time, the company has established itself as a reliable developer and supplier of high-quality dietary supplements, distributing innovative formulas, natural ingredients and a scientific approach to health.z", 
+            text1: "Today, Vivasam's range includes more than 11 types of products aimed at maintaining immunity, improving digestion, normalizing sleep, increasing energy, and comprehensively improving the health of the body. All products undergo strict quality control and comply with modern production standards.", 
+            text2: "The company's mission is to make health care accessible, effective and safe. Vivasam Group strives to offer everyone natural solutions to maintain an active lifestyle and improve health for many years.",
             learnMore: 'Learn More',
             certificates: 'Certificates',
             sectionTitle: 'Our Products',
@@ -43,6 +46,9 @@
             getInTouch: 'Связаться с нами',
             quickContact: 'Быстрый контакт',
             aboutTitle: 'О компании VIVASAM Group',
+            lead: "Компания Vivasam Group — современный производитель биологически активных добавок, работающий на рынке с 2022 года. За короткий срок компания зарекомендовала себя как надёжный разработчик и поставщик качественных БАДов, сочетающих инновационные формулы, натуральные ингредиенты и научный подход к здоровью.", 
+            text1: "Сегодня в ассортименте Vivasam представлено более 11 наименований препаратов, направленных на поддержание иммунитета, улучшение пищеварения, нормализацию сна, повышение энергии, а также комплексное оздоровление организма. Все продукты проходят строгий контроль качества и соответствуют современным стандартам производства.", 
+            text2: "Миссия компании — сделать заботу о здоровье доступной, эффективной и безопасной. Vivasam Group стремится предложить каждому человеку натуральные решения для поддержания активного образа жизни и укрепления здоровья на долгие годы.",
             learnMore: 'Узнать больше',
             certificates: 'Сертификаты',
             sectionTitle: 'Наши продукты',
@@ -64,6 +70,9 @@
             getInTouch: 'Bog\'lanish',
             quickContact: 'Tezkor aloqa',
             aboutTitle: 'VIVASAM Group haqida',
+            lead: "Vivasam Group — 2022-yilda bozorga chiqadigan zamonaviy parhez qo‘shimchalar ishlab chiqaruvchisi. Qisqa vaqt ichida kompaniya o‘zini yuqori sifatli oziq-ovqat qo‘shimchalarining ishonchli ishlab chiqaruvchisi va yetkazib beruvchisi sifatida ko‘rsatdi, innovatsion formulalar, tabiiy ingredientlar va salomatlikka ilmiy yondashuvni tarqatdi.", 
+            text1: "Bugungi kunda Vivasam assortimentida immunitetni saqlash, ovqat hazm qilishni yaxshilash, uyquni normallashtirish, energiyani oshirish va tana salomatligini har tomonlama yaxshilashga qaratilgan 11 dan ortiq turdagi mahsulotlar mavjud. Barcha mahsulotlar qat'iy sifat nazorati ostida va zamonaviy ishlab chiqarish standartlariga mos keladi.", 
+            text2: "Kompaniyaning vazifasi sog'liqni saqlashni qulay, samarali va xavfsiz qilishdir. Vivasam Group ko'p yillar davomida faol hayot tarzini saqlab qolish va salomatlikni yaxshilash uchun barchaga tabiiy echimlarni taklif qilishga intiladi.",
             learnMore: 'Batafsil',
             certificates: 'Sertifikatlar',
             sectionTitle: 'Bizning mahsulotlar',
@@ -172,24 +181,29 @@
      * Initialize language selector
      */
     function initLanguageSelector() {
-        const languageSelect = document.getElementById('language-select');
-        if (!languageSelect) return;
-
-        const savedLanguage = localStorage.getItem('selectedLanguage') || 'ru';
-        languageSelect.value = savedLanguage;
-        setLanguage(savedLanguage);
-        
-        languageSelect.addEventListener('change', (e) => {
-            const selectedLanguage = e.target.value;
-            localStorage.setItem('selectedLanguage', selectedLanguage);
-            setLanguage(selectedLanguage);
-        });
+    const languageSelect = document.getElementById('language-select');
+    // Always default to 'ru' if not set
+    let savedLanguage = localStorage.getItem('selectedLanguage');
+    if (!savedLanguage) {
+        savedLanguage = 'ru';
+        localStorage.setItem('selectedLanguage', 'ru');
     }
+    languageSelect.value = savedLanguage;
+    this.setLanguage(savedLanguage);
+
+    languageSelect.addEventListener('change', (e) => {
+        const lang = e.target.value;
+        localStorage.setItem('selectedLanguage', lang);
+        this.setLanguage(lang);
+    });
+}
+
+
 
     /**
      * Set language and translate content
      */
-    function setLanguage(language) {
+    async function setLanguage(language) {
         const currentTranslations = translations[language] || translations.ru;
         
         document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -203,6 +217,37 @@
         if (document.getElementById('products-grid')) {
             loadProducts();
         }
+            const container = document.getElementById('products-grid');
+            const response = await fetch('data/products.json');
+            const products = await response.json();
+            const currentLang = localStorage.getItem('selectedLanguage') || 'ru';
+
+
+            container.innerHTML = products.map((product, index) => {
+            const productName = product.name?.[language] || product.name?.ru || 'Product';
+            const swiperClass = `swiper-related-${index}`;
+            
+            return `
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${index * 100}">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            ${createProductSwiper(product.images, swiperClass)}
+                        </div>
+                        <div class="product-content">
+                            <h4 class="product-title">${productName}</h4>
+                            <div class="product-actions">
+                                <a href="product.html?index=${index}" class="btn btn-primary w-100">
+                                    ${getTranslation('learnMore', language)}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        // Initialize Swiper instances
+        initProductSwipers(products.length);
     }
 
     /**
@@ -257,6 +302,7 @@
     }
 
     /**
+     * initLanguageSelector
      * Initialize AOS (Animate On Scroll)
      */
     function initAOS() {
@@ -295,33 +341,52 @@
     /**
      * Render products grid
      */
-    function renderProducts(products, language, container) {
-        container.innerHTML = products.map((product, index) => {
-            const productName = product.name?.[language] || product.name?.ru || 'Product';
-            const swiperClass = `swiper-related-${index}`;
-            
-            return `
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${index * 100}">
-                    <div class="product-card">
-                        <div class="product-image-container">
-                            ${createProductSwiper(product.images, swiperClass)}
-                        </div>
-                        <div class="product-content">
-                            <h4 class="product-title">${productName}</h4>
-                            <div class="product-actions">
-                                <a href="product.html?index=${index}" class="btn btn-primary w-100">
-                                    ${getTranslation('learnMore', language)}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }).join('');
+function renderProducts(products, language) {
+    const container = document.getElementById('products-grid');
+    if (!container) return;
 
-        // Initialize Swiper instances
-        initProductSwipers(products.length);
-    }
+    container.innerHTML = products.map((product, index) => {
+        const swiperClass = `swiper-product-${index}`;
+        return `
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="product-card">
+                <div class="product-image-container">
+                  <div class="swiper ${swiperClass}">
+                    <div class="swiper-wrapper">
+                      ${product.images.map(img => `
+                        <div class="swiper-slide">
+                          <img src="${img}" class="product-image" alt="Product Image">
+                        </div>
+                      `).join('')}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <h4 class="product-title">${product.name?.[language] || product.name?.ru || 'Product'}</h4>
+                  <div class="product-actions">
+                    <a href="product.html?index=${index}" class="btn btn-primary w-100">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `;
+    }).join('');
+
+    // Initialize Swiper for each product card
+    products.forEach((_, index) => {
+        setTimeout(() => {
+            new Swiper(`.swiper-product-${index}`, {
+                loop: true,
+                pagination: {
+                    el: `.swiper-product-${index} .swiper-pagination`,
+                    clickable: true,
+                },
+                // Use default slide effect, no fade, no autoplay
+            });
+        }, 0);
+    });
+}
 
     /**
      * Create Swiper HTML for product images

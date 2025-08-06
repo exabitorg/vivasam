@@ -1,406 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>VIVASAM - Монолит здоровья.</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/logo.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVASAM - Natural Health Supplements</title>
+    <meta name="description" content="VIVASAM Group - Premium natural supplements for health and wellness. Trusted provider of high-quality dietary supplements since 2022.">
+    <meta name="keywords" content="natural supplements, health, wellness, dietary supplements, vitamins, VIVASAM">
+    
+    <!-- Favicon -->
+    <link href="assets/img/logo.jpg" rel="icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-
-<body class="index-page">
-
-  <header id="header" class="header fixed-top">
-
-    <!-- Top Bar (commented, unchanged) -->
-    <!-- 
-    <div class="topbar d-flex align-items-center dark-background">
-      ...
-    </div> 
-    -->
-
-    <div class="branding d-flex align-items-cente">
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo.jpg"  alt="VIVASAM">
-        </a>
-
-        <nav id="navmenu" class="navmenu d-flex flex-row align-items-center justify-content-center fs-2">
-          <ul>
-            <li><a href="#" class="nav-home fs-5 fw-semibold" data-i18n="home">Главная</a></li>
-            <li><a href="#quick-contact" class="nav-contact fs-5 fw-semibold" data-i18n="contact">Контакты</a></li>
-            <li><a href="#find-a-product" class="nav-products fs-5 fw-semibold" data-i18n="products">Наши продукты</a></li>
-            <li><a href="#partners" class="nav-partners fs-5 fw-semibold" data-i18n="partners">Партнёры</a></li>
-          </ul>
-          <select id="language-select" class="form-select form-select-lg w-auto ms-3 fw-semibold !border-0">
-            <option value="uz" class="fw-semibold">O‘zbek</option>
-            <!-- <option value="uz_cyrl">Ўзбек (Кирил)</option> -->
-            <option selected value="ru" class="fw-semibold">Русский</option>
-            <option value="en" class="fw-semibold">English</option>
-          </select>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-        <!-- Social Icons (commented, untouched) -->
-        <!--
-        <li><a href="..." class="..." target="_blank">...</a></li>
-        -->
-      </div>
-    </div>
-  </header>
-
-<main class="main">
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero section">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <div class="trust-badges mb-4" data-aos="fade-right" data-aos-delay="200">
-              <div class="badge-item">
-                <i class="bi bi-shield-check"></i>
-                <span data-i18n="trusted" class="trusted">Надежный</span>
-              </div>
-              <div class="badge-item">
-                <i class="bi bi-clock"></i>
-                <span data-i18n="contact247" class="contact247">Контакт 24/7</span>
-              </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="assets/img/logo.jpg" alt="VIVASAM" class="logo-img me-2">
+                <span class="brand-text">VIVASAM</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" data-i18n="home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-i18n="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products" data-i18n="products">Наши продукты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners" data-i18n="partners">Партнёры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-i18n="contact">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="language-select" class="form-select form-select-sm ms-3">
+                            <option value="en">English</option>
+                            <option value="ru" selected>Русский</option>
+                            <option value="uz">O'zbek</option>
+                        </select>
+                    </li>
+                </ul>
             </div>
-            <h1 data-aos="fade-right" data-aos-delay="300" class="">
-              <span class="highlight">VIVASAM - </span> 
-            <span class="d-flex"> <span data-i18n="heroSubtitle" class="slogan">Монолит здоровья.</span></span>
-            </h1>
-            <div class="emergency-contact" data-aos="fade-right" data-aos-delay="700">
-              <div class="emergency-icon"><i class="bi bi-telephone-fill"></i></div>
-              <a href="tel:+15559112468" class="emergency-info">
-                <small data-i18n="quickContact" class="quickContact">Быстрый контакт</small>
-                <strong>+1 (555) 911-2468</strong>
-              </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <div class="trust-badges mb-4">
+                            <div class="badge-item">
+                                <i class="bi bi-shield-check"></i>
+                                <span data-i18n="trusted">Надежный</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="bi bi-clock"></i>
+                                <span data-i18n="available24">Контакт 24/7</span>
+                            </div>
+                        </div>
+                        
+                        <h1 class="hero-title mb-4">
+                            <span class="brand-highlight">VIVASAM</span><br>
+                            <span class="hero-subtitle" data-i18n="heroSubtitle">Монолит здоровья.</span>
+                        </h1>
+                        
+                        <p class="hero-description mb-5" data-i18n="heroDescription">
+                            Премиальные натуральные добавки, созданные с научной точностью для вашего оптимального здоровья и благополучия.
+                        </p>
+                        
+                        <div class="hero-actions mb-5">
+                            <a href="#products" class="btn btn-primary btn-lg me-3">
+                                <span data-i18n="exploreProducts">Наши продукты</span>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">
+                                <span data-i18n="getInTouch">Быстрый контакт</span>
+                            </a>
+                        </div>
+                        
+                        <div class="emergency-contact">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <small data-i18n="quickContact">Быстрый контакт</small>
+                                    <strong>+1 (555) 911-2468</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-visual">
+                        <div class="hero-image-container">
+                            <img src="assets/img/hero.jpg" alt="Health Supplements" class="hero-image  rounded-4">
+                            <div class="floating-element element-1">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="bi bi-shield-plus"></i>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="bi bi-leaf"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-lg-6">
-          <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
-            <div class="background-elements">
-              <div class="element element-1"></div>
-              <div class="element element-2"></div>
-              <div class="element element-3"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="home-about" class="home-about section">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-          <div class="about-content fs-4 fw-semibold">
-            <h2 class="section-heading" data-i18n="aboutTitle fw-semibold">О компании Vivasam Group</h2>
-            <p class="lead-text fs-5 fw-semibold" data-i18n="aboutLead">Компания Vivasam Group — современный производитель биологически активных добавок, работающий на рынке с 2022 года. За короткий срок компания зарекомендовала себя как надёжный разработчик и поставщик качественных БАДов, сочетающих инновационные формулы, натуральные ингредиенты и научный подход к здоровью.</p>
-            <p data-i18n="aboutText1" class="second-paragraph fs-5 fw-semibold">Сегодня в ассортименте Vivasam представлено более 11 наименований препаратов, направленных на поддержание иммунитета, улучшение пищеварения, нормализацию сна, повышение энергии, а также комплексное оздоровление организма. Все продукты проходят строгий контроль качества и соответствуют современным стандартам производства.</p>
-            <p data-i18n="aboutText2" class="third-paragraph fs-5 fw-semibold">Миссия компании — сделать заботу о здоровье доступной, эффективной и безопасной. Vivasam Group стремится предложить каждому человеку натуральные решения для поддержания активного образа жизни и укрепления здоровья на долгие годы.</p>
-
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-          <div class="about-visual">
-            <img src="assets/img/storage.jpg"  height="100%" alt="Modern medical facility" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sertifikatlar -->
-  <section id="featured-departments" class="featured-departments section">
-    <div class="container section-title" data-aos="fade-up">
-      <h2 data-i18n="certificates">Сертификаты</h2>
-    </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row g-5 d-flex flex-row justify-content-center align-items-center my-auto">
-        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100"><img src="assets/img/photo_1_2025-07-24_14-38-46.jpg" alt="SERTIFIKAT" class="img-fluid"></div>
-        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200"><img src="assets/img/photo_2_2025-07-24_14-38-46.jpg" alt="SERTIFIKAT" class="img-fluid"></div>
-        <!-- <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100"><img src="assets/img/photo_3_2025-07-24_14-38-46.jpg" alt="Neurological Sciences" class="img-fluid"></div>
-        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200"><img src="assets/img/photo_2025-07-24_14-39-38.jpg" alt="Neurological Sciences" class="img-fluid"></div> -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Products -->
-  <section id="find-a-product" class="find-a-doctor section">
-    <div class="container section-title" data-aos="fade-up">
-      <h2 data-i18n="sectionTitle">Наши продукты</h2>
-    </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-     <!-- Products Grid -->
-    <div class="row justify-content-center align-items-center" id="products-grid">
-      <!-- <div class="col-md-4 mb-4" >
-    <div class="doctor-profile">
-      <div class="profile-header">
-        <img src="assets/img/medicine.png" alt="Dr. Sarah Johnson" class="img-fluid">
-      </div>
-      <div class="doctor-details p-3">
-        <h4>Буларди vivasam </h4>
-        <div class="experience-info">
-          
-        </div>
-      </div>
-      <div class="action-buttons p-3">
-         <a href="product.html?index=0" class="btn-primary">Подробнее</a>
-
-      </div>
-    </div>
-  </div> -->
-    </div>
-</div>
-
-    </div>
-  </section>
-
-  <!-- Partners -->
-  <section id="partners" class="featured-departments section">
-    <div class="container section-title" data-aos="fade-up">
-      <h2 data-i18n="partners">Партнёры</h2>
-    </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row g-5 d-flex flex-row justify-content-center align-items-center">
-        <div class="col-lg-3 merospharm" data-aos="zoom-in" data-aos-delay="100"><img src="assets/img/merospharm.png" alt="Hamkor 1" class="img-fluid"></div>
-        <div class="col-lg-3 p-5" data-aos="zoom-in" data-aos-delay="200"><img src="assets/img/clients/5d3329cf1d493.jpg" alt="Hamkor 2" class="img-fluid"></div>
-        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200"><img src="assets/img/clients/60b0e0e067c91.jpg" alt="Hamkor 3" class="img-fluid"></div>
-        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="100"><img src="assets/img/clients/625133f8a4282.jpg" alt="Hamkor 4" class="img-fluid"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section id="video">
-    <div class="container">
-
-      <iframe width="50%" height="415" src="https://www.youtube.com/embed/tZNeiOpHhGw?si=z7NhMV2kj7KKHjgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-  </section> -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="contact-block" >
-          <div class="row" id="quick-contact">
-
-            <div class="col-lg-8" >
-              <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
-                <h2>Быстрый контакт</h2>
-                <p>Свяжитесь с нами, мы готовы помочь вам.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="contact-actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="tel:5551234567" class="emergency-call">
-                  <i class="bi bi-telephone"></i>
-                  <span>(555) 123-4567</span>
-                </a>
-                <a id="location" href="https://www.google.com/maps/place/41%C2%B016'37.5%22N+69%C2%B015'38.3%22E/@41.2769863,69.2606501,19z/data=!4m4!3m3!8m2!3d41.277077!4d69.260626?entry=ttu&g_ep=EgoyMDI1MDcyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="contact-link">Адрес</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
     </section>
-  </main>
 
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-content">
+                        <h2 class="section-title mb-4" data-i18n="aboutTitle">О компании Vivasam Group</h2>
+                        
+                        <p class="lead-text fs-5 fw-semibold" data-i18n="aboutLead">Компания Vivasam Group — современный производитель биологически активных добавок, работающий на рынке с 2022 года. За короткий срок компания зарекомендовала себя как надёжный разработчик и поставщик качественных БАДов, сочетающих инновационные формулы, натуральные ингредиенты и научный подход к здоровью.</p>
+                        <p data-i18n="aboutText1" class="second-paragraph fs-5 fw-semibold">Сегодня в ассортименте Vivasam представлено более 11 наименований препаратов, направленных на поддержание иммунитета, улучшение пищеварения, нормализацию сна, повышение энергии, а также комплексное оздоровление организма. Все продукты проходят строгий контроль качества и соответствуют современным стандартам производства.</p>
+                        <p data-i18n="aboutText2" class="third-paragraph fs-5 fw-semibold">Миссия компании — сделать заботу о здоровье доступной, эффективной и безопасной. Vivasam Group стремится предложить каждому человеку натуральные решения для поддержания активного образа жизни и укрепления здоровья на долгие годы.</p>
 
-  <footer id="footer" class="footer-16 footer position-relative">
-
-    <div class="container">
-
-      <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-start">
-
-          <div class="col-lg-3">
-            <div class="brand-section d-flex flex-row align-items-center g-2">
-              <!-- <a href="index.html" class="logo d-flex align-items-center mb-4"> -->
-                <!-- <span class="sitename">VIVASAM</span> -->
-                <img src="assets/img/logo.jpg" width="100px" height="100px" alt="VIVASAM Logo" class="logo-img">
-              <!-- </a> -->
-              <!-- <p class="brand-description ml-5">Монолит здоровья.</p> -->
-
-             
+<!--                         
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Quality Assurance</h5>
+                                    <p>Strict quality control and modern production standards</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Expert Team</h5>
+                                    <p>Scientific approach with natural ingredients</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-graph-up"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Innovation</h5>
+                                    <p>11+ products for comprehensive health support</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                        <!-- <a href="#products" class="btn btn-primary mt-4">
+                            <span data-i18n="learnMore">Learn More</span>
+                        </a> -->
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="about-visual">
+                        <img src="assets/img/storage.jpg" alt="VIVASAM Facility" class="img-fluid rounded shadow">
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="brand-section">
-   
-              <div class="contact-info ">
-                <div class="contact-item">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>г.Ташкент, Яккасаройский район, улица Бабура 73 А</span>
-                </div>
-                <div class="contact-item">
-                  <i class="bi bi-telephone"></i>
-                  <span>+1 (555) 987-6543</span>
-                </div>
-                <div class="contact-item">
-                  <i class="bi bi-envelope"></i>
-                  <span>Vivasam-group@mail.ru</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-                    <div class="col-lg-4">
-              <h5>Социальные сети</h5> 
-             <div class="col-lg-6 flex-row d-flex justify-content-between align-items-center fw-200 fs-2">
-
-                <div class="contact-item">
-                  <!-- Instagram -->
-                  <a href="https://www.instagram.com/vivasam.group" class="twitter text-danger opacity-75" target="_blank"><i class="bi bi-instagram"></i> </a>
-                </div>
-                <div class="contact-item">
-                  <!-- Facebook -->
-                  <a href="https://www.facebook.com/profile.php?id=100088411987053" class="facebook" target="_blank"><i class="bi bi-facebook"> </i></a>
-                </div>
-           
-                   <div class="contact-item">
-                     <!-- Telegram -->
-                     <a href="https://t.me/vivasamgroup" class="telegram" target="_blank"><i class="bi bi-telegram"> </i></a>
-                   </div>
-                    <div class="contact-item ">
-                      <!-- Youtube -->
-                      <a href="https://youtube.com/@vivasamgroup?si=4iqNknhEHCJZ28js" class="youtube text-danger" target="_blank"><i class="bi bi-youtube"> </i></a>
-             </div>
-          </div>
         </div>
-      </div>
+    </section>
 
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-i18n="certificates">Certificates</h2>
+                <!-- <p class="section-subtitle">Quality and safety certifications</p> -->
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="certificate-card">
+                        <img src="assets/img/photo_1_2025-07-24_14-38-46.jpg" alt="Certificate 1" class="img-fluid">
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="certificate-card">
+                        <img src="assets/img/photo_2_2025-07-24_14-38-46.jpg" alt="Certificate 2" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+<section id="products" class="products-section py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title" data-i18n="sectionTitle">Our Products</h2>
+      <!-- <p class="section-subtitle">Premium natural supplements for your health</p> -->
     </div>
 
-    <div class="footer-bottom" id="footer-bottom">
-      <div class="container">
-        <div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
-          <div class="row align-items-center">
-
-            <div class="col-lg-12 text-center">
-              <div class="copyright">
-                <p class="rights bootm">Все права защищены © 2022 Vivasam Group</p>
-              </div>
-            </div>
-
-            <!-- <div class="col-lg-6">
-              <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-                <div class="credits">
-
-                </div>
-              </div>
-            </div> -->
-
-          </div>
-        </div>
-      </div>
+    <div class="row" id="products-grid">
+      <!-- Dynamic rendering by JavaScript -->
     </div>
+  </div>
+</section>
 
-  </footer>
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-i18n="partners">Partners</h2>
+                <!-- <p class="section-subtitle">Trusted partnerships for quality assurance</p> -->
+            </div>
+            
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="partner-logo">
+                        <img src="assets/img/merospharm.png" alt="Partner 1" class="img-fluid">
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="partner-logo">
+                        <img src="assets/img/clients/5d3329cf1d493.jpg" alt="Partner 2" class="img-fluid">
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="partner-logo">
+                        <img src="assets/img/clients/60b0e0e067c91.jpg" alt="Partner 3" class="img-fluid">
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="partner-logo">
+                        <img src="assets/img/clients/625133f8a4282.jpg" alt="Partner 4" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="contact-content">
+                        <h2 class="section-title mb-3" data-i18n="quickContact">Quick Contact</h2>
+                        <p class="lead mb-4" data-i18n="contactDescription">
+                            Get in touch with us. We're ready to help you with your health journey.
+                        </p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h6 data-i18n="address">Address</h6>
+                                    <p>Tashkent, Yakkasaray district, Babur street 73 A</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h6 data-i18n="phone">Phone</h6>
+                                    <p>+1 (555) 987-6543</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h6 data-i18n="email">Email</h6>
+                                    <p>Vivasam-group@mail.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-actions">
+                        <a href="tel:+15559876543" class="btn btn-primary btn-lg w-100 mb-3" data-i18n="callNow">
+                            <i class="bi bi-telephone me-2"></i>
+                            Call Now
+                        </a>
+                        
+                        <a href="https://www.google.com/maps/place/41%C2%B016'37.5%22N+69%C2%B015'38.3%22E/@41.2769863,69.2606501,19z" 
+                           target="_blank" class="btn btn-outline-primary btn-lg w-100" data-i18n="viewLocation">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            View Location
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div id="preloader"></div>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="assets/img/logo.jpg" alt="VIVASAM" class="footer-logo mb-3">
+                        <p class="brand-tagline" data-i18n="brandTagline">Foundation of Health</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title" data-i18n="contactInfo">Contact Info</h5>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            <span>Tashkent, Yakkasaray district, Babur street 73 A</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-telephone me-2"></i>
+                            <span>+1 (555) 987-6543</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-envelope me-2"></i>
+                            <span>Vivasam-group@mail.ru</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title" data-i18n="followUs">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/vivasam.group" target="_blank" class="social-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100088411987053" target="_blank" class="social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://t.me/vivasamgroup" target="_blank" class="social-link">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                        <a href="https://youtube.com/@vivasamgroup?si=4iqNknhEHCJZ28js" target="_blank" class="social-link">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="copyright mb-0" data-i18n="copyright">
+                        © 2022 VIVASAM Group. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const language = localStorage.getItem('selectedLanguage') || 'ru';
+    const container = document.getElementById('products-grid');
+    if (!container) return;
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-     const currentLang = localStorage.getItem("selectedLanguage") || "ru";
-console.log(currentLang);
+    try {
+      const res = await fetch('data/products.json');
+      const products = await res.json();
 
-    fetch("data/products.json")
-      .then(res => res.json())
-      .then(products => {
-        const container = document.getElementById("products-grid");
-        container.innerHTML = products.map((p, i) => {
-        const swiperClass = `swiper-related-${i}`;
+      container.innerHTML = products.map((product, index) => {
+        const name = product.name?.[language] || product.name?.ru || 'Product';
+        const category = product.category?.[language] || product.category?.ru || '';
+        const swiperClass = `swiper-product-${index}`;
+
         return `
-          <div class="col-md-4 mb-4">
-            <div class="doctor-profile">
-              <div class="profile-header">
-                <div class="swiper ${swiperClass}">
-                  <div class="swiper-wrapper">
-                    ${p.images.map(img => `
-                      <div class="swiper-slide">
-                        <img src="${img}" class="img-fluid rounded border product-image" />
-                      </div>
-                    `).join("")}
-                  </div>
-                  <div class="swiper-pagination py-2"></div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${index * 100}">
+            <div class="product-card h-100 d-flex flex-column justify-content-between">
+              <span class="card-badge">${category}</span>
+              <div class="swiper ${swiperClass}">
+                <div class="swiper-wrapper">
+                  ${product.images.map(img => `
+                    <div class="swiper-slide">
+                      <img src="${img}" class="card-img-top" alt="${name}">
+                    </div>
+                  `).join('')}
                 </div>
               </div>
-              <div class="doctor-details p-3">
-                <h4>${p.name?.[currentLang] || p.name?.ru}</h4>
-              </div>
-              <div class="action-buttons p-3">
-                <a href="product.html?index=${i}" class="text-white fs-6">
-                  <button class="btn btn-primary">
-                    ${currentLang === "uz" ? "Batafsil" : currentLang === "en" ? "Learn More" : "Подробнее"}
-                  </button>
+              <div class="product-card-body">
+                <div class="product-card-title">${name}</div>
+                <a href="product.html?index=${index}" class="btn mt-2">
+                  ${language === 'uz' ? 'Batafsil' : language === 'en' ? 'Learn More' : 'Подробнее'}
                 </a>
               </div>
             </div>
           </div>
         `;
-      }).join("");
+      }).join('');
 
-      // Swiper'larni ishga tushurish (har bir .swiper-related-*)
-      products.forEach((_, i) => {
-        const swiperClass = `.swiper-related-${i}`;
-        new Swiper(swiperClass, {
+      // Initialize swipers
+      products.forEach((_, index) => {
+        new Swiper(`.swiper-product-${index}`, {
           loop: true,
           pagination: {
-            el: `${swiperClass} .swiper-pagination`,
-            clickable: true,
-          },
+            el: `.swiper-product-${index} .swiper-pagination`,
+            clickable: true
+          }
         });
       });
-    });
-  </script>
+
+    } catch (err) {
+      console.error('Failed to load products:', err);
+    }
+  });
+</script>
 
 </body>
-
 </html>

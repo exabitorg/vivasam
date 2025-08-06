@@ -130,6 +130,7 @@ class VivasamApp {
         });
     }
 
+    // ...existing code...
     // Set language and translate content
     setLanguage(language) {
         const translations = {
@@ -141,71 +142,113 @@ class VivasamApp {
                 contact: 'Contact',
                 trusted: 'Trusted',
                 available24: '24/7 Available',
-                heroSubtitle: 'Foundation of Health',
+                heroSubtitle: 'Foundation of Health.',
                 heroDescription: 'Premium natural supplements crafted with scientific precision for your optimal health and wellness journey.',
                 exploreProducts: 'Explore Products',
                 getInTouch: 'Get in Touch',
                 quickContact: 'Quick Contact',
                 aboutTitle: 'About VIVASAM Group',
+                aboutLead: "Vivasam Group is a modern manufacturer of dietary supplements that has been on the market since 2022. In a short period, the company has established itself as a reliable developer and supplier of high-quality dietary supplements, combining innovative formulas, natural ingredients, and a scientific approach to health.",
+                aboutText1: "Today, Vivasam's range includes more than 11 types of products aimed at supporting immunity, improving digestion, normalizing sleep, increasing energy, and comprehensive health improvement. All products undergo strict quality control and comply with modern production standards.",
+                aboutText2: "The company's mission is to make health care accessible, effective, and safe. Vivasam Group strives to offer everyone natural solutions to maintain an active lifestyle and strengthen health for many years.",
                 learnMore: 'Learn More',
                 certificates: 'Certificates',
                 sectionTitle: 'Our Products',
-                partners: 'Partners',
                 contactDescription: 'Get in touch with us. We\'re ready to help you with your health journey.',
-                brandTagline: 'Foundation of Health'
+                brandTagline: 'Foundation of Health.',
+                partners: 'Partners',
+                address: 'Address',
+    phone: 'Phone',
+    email: 'Email',
+    callNow: 'Call Now',
+    viewLocation: 'View Location',
+    contactInfo: 'Contact Info',
+    followUs: 'Follow Us',
+    copyright: '© 2022 VIVASAM Group. All rights reserved.'
             },
             ru: {
                 home: 'Главная',
-                about: 'О нас',
-                products: 'Продукты',
+                about: 'О компании',
+                products: 'Наши продукты',
                 partners: 'Партнёры',
                 contact: 'Контакты',
                 trusted: 'Надежный',
                 available24: 'Доступно 24/7',
-                heroSubtitle: 'Монолит здоровья',
+                heroSubtitle: 'Монолит здоровья.',
                 heroDescription: 'Премиальные натуральные добавки, созданные с научной точностью для вашего оптимального здоровья и благополучия.',
                 exploreProducts: 'Наши продукты',
                 getInTouch: 'Связаться с нами',
                 quickContact: 'Быстрый контакт',
-                aboutTitle: 'О компании VIVASAM Group',
-                learnMore: 'Узнать больше',
+                aboutTitle: 'О компании Vivasam Group',
+                aboutLead: "Компания Vivasam Group — современный производитель биологически активных добавок, работающий на рынке с 2022 года. За короткий срок компания зарекомендовала себя как надёжный разработчик и поставщик качественных БАДов, сочетающих инновационные формулы, натуральные ингредиенты и научный подход к здоровью.",
+                aboutText1: "Сегодня в ассортименте Vivasam представлено более 11 наименований препаратов, направленных на поддержание иммунитета, улучшение пищеварения, нормализацию сна, повышение энергии, а также комплексное оздоровление организма. Все продукты проходят строгий контроль качества и соответствуют современным стандартам производства.",
+                aboutText2: "Миссия компании — сделать заботу о здоровье доступной, эффективной и безопасной. Vivasam Group стремится предложить каждому человеку натуральные решения для поддержания активного образа жизни и укрепления здоровья на долгие годы.",
+                learnMore: 'Подробнее',
                 certificates: 'Сертификаты',
                 sectionTitle: 'Наши продукты',
-                partners: 'Партнёры',
                 contactDescription: 'Свяжитесь с нами. Мы готовы помочь вам в вашем путешествии к здоровью.',
-                brandTagline: 'Монолит здоровья'
+                brandTagline: 'Монолит здоровья.',
+                address: 'Адрес',
+                phone: 'Телефон',
+                email: 'Эл. почта',
+                callNow: 'Позвонить',
+                viewLocation: 'Посмотреть на карте',
+                contactInfo: 'Контактная информация',
+                followUs: 'Мы в соцсетях',
+                copyright: '© 2022 VIVASAM Group. Все права защищены.'
             },
             uz: {
                 home: 'Bosh sahifa',
-                about: 'Biz haqimizda',
-                products: 'Mahsulotlar',
+                about: 'Kompaniya haqida',
+                products: 'Mahsulotlarimiz',
                 partners: 'Hamkorlar',
                 contact: 'Aloqa',
                 trusted: 'Ishonchli',
                 available24: '24/7 mavjud',
-                heroSubtitle: 'Salomatlik poydevori',
+                heroSubtitle: 'Salomatlik poydevori.',
                 heroDescription: 'Sizning optimal salomatlik va farovonlik sayohatingiz uchun ilmiy aniqlik bilan yaratilgan premium tabiiy qo\'shimchalar.',
                 exploreProducts: 'Mahsulotlarni ko\'rish',
                 getInTouch: 'Bog\'lanish',
                 quickContact: 'Tezkor aloqa',
                 aboutTitle: 'VIVASAM Group haqida',
+                aboutLead: "Vivasam Group — 2022-yildan buyon bozorda faoliyat yuritayotgan zamonaviy parhez qo‘shimchalar ishlab chiqaruvchisi. Qisqa vaqt ichida kompaniya o‘zini yuqori sifatli oziq-ovqat qo‘shimchalarining ishonchli ishlab chiqaruvchisi va yetkazib beruvchisi sifatida ko‘rsatdi, innovatsion formulalar, tabiiy ingredientlar va salomatlikka ilmiy yondashuvni birlashtirdi.",
+                aboutText1: "Bugungi kunda Vivasam assortimentida immunitetni saqlash, ovqat hazm qilishni yaxshilash, uyquni normallashtirish, energiyani oshirish va tana salomatligini har tomonlama yaxshilashga qaratilgan 11 dan ortiq turdagi mahsulotlar mavjud. Barcha mahsulotlar qat'iy sifat nazorati ostida va zamonaviy ishlab chiqarish standartlariga mos keladi.",
+                aboutText2: "Kompaniyaning vazifasi sog'liqni saqlashni qulay, samarali va xavfsiz qilishdir. Vivasam Group ko'p yillar davomida faol hayot tarzini saqlab qolish va salomatlikni yaxshilash uchun barchaga tabiiy echimlarni taklif qilishga intiladi.",
                 learnMore: 'Batafsil',
                 certificates: 'Sertifikatlar',
                 sectionTitle: 'Bizning mahsulotlar',
-                partners: 'Hamkorlar',
                 contactDescription: 'Biz bilan bog\'laning. Biz sizning salomatlik sayohatingizda yordam berishga tayyormiz.',
-                brandTagline: 'Salomatlik poydevori'
+                brandTagline: 'Salomatlik poydevori.',
+                address: 'Manzil',
+                phone: 'Telefon',
+                email: 'Email',
+                callNow: 'Qo‘ng‘iroq qilish',
+                viewLocation: 'Joylashuvni ko‘rish',
+                contactInfo: 'Aloqa ma’lumotlari',
+                followUs: 'Biz ijtimoiy tarmoqlarda',
+                copyright: '© 2022 VIVASAM Group. Barcha huquqlar himoyalangan.'
             }
         };
 
         const currentTranslations = translations[language];
-        
+
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (currentTranslations[key]) {
                 element.textContent = currentTranslations[key];
             }
         });
+
+        // Translate placeholder attributes if needed
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            if (currentTranslations[key]) {
+                element.setAttribute('placeholder', currentTranslations[key]);
+            }
+        });
+
+        // Re-render products on language change
+        this.loadProducts();
     }
 
     // Load and display products
