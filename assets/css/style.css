@@ -31,15 +31,15 @@
     "Segoe UI", Roboto, sans-serif;
 
   /* Spacing */
-  --section-padding: 5rem 0;
-  --border-radius: 0.75rem;
-  --border-radius-sm: 0.5rem;
-  --border-radius-lg: 1rem;
+  --section-padding: 6rem 0; /* oldingi 5rem → 6rem */
+  --border-radius-sm: 0.625rem; /* oldingi 0.5rem → 0.625rem (~10px) */
+  --border-radius: 0.875rem; /* oldingi 0.75rem → 0.875rem (~14px) */
+  --border-radius-lg: 1.25rem; /* oldingi 1rem → 1.25rem (20px) */
 
   /* Shadows */
-  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   /* Transitions */
   --transition: all 0.3s ease;
@@ -200,7 +200,7 @@ h6 {
 
 .logo-img {
   width: 3rem;
-  height: 3rem;
+  height: auto;
   /* border-radius: 50%; */
   /* object-fit: cover; */
 }
@@ -256,7 +256,7 @@ h6 {
     rgba(var(--primary-rgb), 0.1) 100%
   );
   min-height: 100vh;
-  padding: 8rem 0 4rem;
+  padding: 1rem 0 4rem 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -563,6 +563,13 @@ h6 {
   transition: var(--transition);
 }
 
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px; /* match product-image-container height */
+}
+
 .product-card:hover .product-image {
   transform: scale(1.05);
 }
@@ -774,10 +781,12 @@ h6 {
 /* Back to Top Button */
 .back-to-top {
   position: fixed;
-  bottom: 2rem;
+  bottom: 5vw;
   right: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4vw;
+  height: 4vw;
+  background: #26cded;
+  color: #fff;
   border-radius: 50%;
   display: none;
   align-items: center;
@@ -785,7 +794,7 @@ h6 {
   z-index: 1000;
   box-shadow: var(--shadow);
   border: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .back-to-top.show {
@@ -800,7 +809,8 @@ h6 {
   object-fit: contain;
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(1, 192, 228, 0.08);
-  background: #fff;
+  /* background: #fff; */
+  padding: 1vw;
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -845,10 +855,14 @@ h6 {
 .product-card .card-img-top {
   width: 100%;
   height: 320px;
+  padding: 3vw;
+  /* scale: 1.4; */
+  overflow: hidden;
   object-fit: contain;
   border-bottom: none;
-  background: #fff;
+  /* background: #fff; */
 }
+
 .product-card-body {
   padding: 1.5rem;
   text-align: center;
@@ -1101,4 +1115,41 @@ i[class*=" bi-"] {
 #language-select:focus {
   outline: none;
   box-shadow: none;
+}
+
+@media (max-width: 576px) {
+  .hero-image {
+    width: 100%;
+    height: 100%;
+  }
+  .back-to-top {
+    bottom: 2rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  html {
+    overflow-x: hidden !important;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  #language-select {
+    margin-right: 3vw;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  z-index: 1030;
+}
+
+#language-select {
+  border: none;
+  margin-right: 3vw;
 }

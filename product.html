@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Продукт — VIVASAM</title>
   <link href="assets/img/logo.png" rel="icon">
 
   <!-- Bootstrap and icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="assets/css/style.css" rel="stylesheet" />
 
   <style>
-    
+
   </style>
 </head>
+
 <body>
   <!-- Navbar (copied from index_new.html) -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="mainNav">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="assets/img/logo.png" alt="VIVASAM" class="logo-img me-2">
@@ -28,7 +31,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center">
+        <ul class="navbar-nav ms-auto align-items-center gap-3">
           <li class="nav-item">
             <a class="nav-link" href="index.html#home" data-i18n="home">Главная</a>
           </li>
@@ -78,7 +81,7 @@
       </div>
     </div>
 
-       <section class="related-products my-5">
+    <section class="related-products my-5">
       <h3 class="text-center mb-5" id="related-title" data-i18n="related">Похожие продукты</h3>
       <div class="row g-4 justify-content-center align-items-stretch" id="related-products"></div>
     </section>
@@ -114,10 +117,13 @@
         <div class="col-lg-4 mb-4">
           <h5 class="footer-title" data-i18n="followUs">Социальные сети</h5>
           <div class="social-links">
-            <a href="https://www.instagram.com/vivasam.group" target="_blank" class="social-link"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100088411987053" target="_blank" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/vivasam.group" target="_blank" class="social-link"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100088411987053" target="_blank" class="social-link"><i
+                class="bi bi-facebook"></i></a>
             <a href="https://t.me/vivasamgroup" target="_blank" class="social-link"><i class="bi bi-telegram"></i></a>
-            <a href="https://youtube.com/@vivasamgroup?si=4iqNknhEHCJZ28js" target="_blank" class="social-link"><i class="bi bi-youtube"></i></a>
+            <a href="https://youtube.com/@vivasamgroup?si=4iqNknhEHCJZ28js" target="_blank" class="social-link"><i
+                class="bi bi-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -132,7 +138,7 @@
     </div>
   </footer>
 
-  <button id="back-to-top" class="btn btn-primary back-to-top">
+  <button id="back-to-top" class="back-to-top">
     <i class="bi bi-arrow-up"></i>
   </button>
 
@@ -156,28 +162,28 @@
 
     // Product details rendering
     const params = new URLSearchParams(window.location.search);
-  const index = parseInt(params.get("index")) || 0;
-  fetch('./data/products.json')
-    .then(res => res.json())
-    .then(products => {
-      const product = products[index];
-      product.images.forEach((src, i) => {
-        const imgEl = document.getElementById(`product-image${i}`);
-        if (imgEl) imgEl.src = src;
-      });
-      document.getElementById("product-name").innerText = product.name[currentLang] || product.name.ru;
-      document.getElementById("product-main-description").innerText = product.specialty?.[currentLang] || product.specialty?.ru || "";
+    const index = parseInt(params.get("index")) || 0;
+    fetch('./data/products.json')
+      .then(res => res.json())
+      .then(products => {
+        const product = products[index];
+        product.images.forEach((src, i) => {
+          const imgEl = document.getElementById(`product-image${i}`);
+          if (imgEl) imgEl.src = src;
+        });
+        document.getElementById("product-name").innerText = product.name[currentLang] || product.name.ru;
+        document.getElementById("product-main-description").innerText = product.specialty?.[currentLang] || product.specialty?.ru || "";
 
-      // Accordion rendering
-      const accordion = document.getElementById("descriptionAccordion");
-      accordion.innerHTML = "";
-      const titles = product?.description_titles || {};
-      const titleKeys = ["first", "second", "third", "fourth", "fifth", "sixth"];
-      for (let i = 1; i <= 6; i++) {
-        const descKey = `description${i}`;
-        const descText = product?.[descKey]?.[currentLang] || product?.[descKey]?.ru || "";
-        const title = titles[titleKeys[i-1]]?.[currentLang] || titles[titleKeys[i-1]]?.ru || `Детали ${i}`;
-        accordion.innerHTML += `
+        // Accordion rendering
+        const accordion = document.getElementById("descriptionAccordion");
+        accordion.innerHTML = "";
+        const titles = product?.description_titles || {};
+        const titleKeys = ["first", "second", "third", "fourth", "fifth", "sixth"];
+        for (let i = 1; i <= 6; i++) {
+          const descKey = `description${i}`;
+          const descText = product?.[descKey]?.[currentLang] || product?.[descKey]?.ru || "";
+          const title = titles[titleKeys[i - 1]]?.[currentLang] || titles[titleKeys[i - 1]]?.ru || `Детали ${i}`;
+          accordion.innerHTML += `
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading${i}">
               <button class="accordion-button ${i > 1 ? "collapsed" : ""}" type="button" data-bs-toggle="collapse" data-bs-target="#desc${i}" aria-expanded="${i === 1}">
@@ -189,69 +195,87 @@
             </div>
           </div>
         `;
-      }
+        }
 
-      // Related products creative cards with swiper
-      const relatedContainer = document.getElementById("related-products");
-      relatedContainer.innerHTML = "";
-      products.forEach((p, i) => {
-        if (i !== index) {
-          const swiperClass = `related-swiper-${i}`;
-          relatedContainer.innerHTML += `
-            <div class="col-md-4 col-sm-6">
-              <div class="product-card h-100 d-flex flex-column justify-content-between">
-                <span class="card-badge">${p.category?.[currentLang] || p.category?.ru || ""}</span>
-                <div class="swiper ${swiperClass}">
-                  <div class="swiper-wrapper">
-                    ${p.images.map((img) => `
-                      <div class="swiper-slide">
-                        <img src="${img}" class="card-img-top" alt="${p.name?.[currentLang] || p.name?.ru}">
-                      </div>
-                    `).join("")}
-                  </div>
-                  </div>
-                  <div class="product-card-body flex-grow-1">
-                  <div class="product-card-title">${p.name?.[currentLang] || p.name?.ru}</div>
+        // Related products creative cards with swiper
+        const relatedContainer = document.getElementById("related-products");
+        relatedContainer.innerHTML = "";
+        products.forEach((p, i) => {
+          if (i !== index) {
+            const swiperClass = `related-swiper-${i}`;
+            relatedContainer.innerHTML += `
+          <a href="product.html?index=${i}" class="col-md-4 col-sm-6 text-decoration-none text-dark">
+  <div class="product-card h-100 d-flex flex-column justify-content-between">
+    <span class="card-badge">${p.category?.[currentLang] || p.category?.ru || ""}</span>
 
-                  <a href="product.html?index=${i}" class="btn mt-2">${currentLang == "uz" ? "Batafsil" : currentLang == "en" ? "Learn More" : "Подробнее" }</a>
-                </div>
-              </div>
-            </div>
+    <div class="swiper swiper-${i}">
+      <div class="swiper-wrapper">
+        ${p.images.map((img) => `
+          <div class="swiper-slide">
+            <img src="${img}" class="card-img-top" alt="${p.name?.[currentLang] || p.name?.ru}">
+          </div>
+        `).join("")}
+      </div>
+      <!-- ✅ Pagination block -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="product-card-body flex-grow-1">
+      <div class="product-card-title">${p.name?.[currentLang] || p.name?.ru}</div>
+      <div class="btn mt-2">
+        ${currentLang == "uz" ? "Batafsil" : currentLang == "en" ? "Learn More" : "Подробнее"}
+      </div>
+    </div>
+  </div>
+</a>
           `;
-          setTimeout(() => {
-            new Swiper(`.${swiperClass}`, {
-              loop: true,
-              pagination: {
-                el: `.${swiperClass} .swiper-pagination`,
-                clickable: true,
-              },
-            });
-          }, 0);
+            setTimeout(() => {
+              new Swiper(`.${swiperClass}`, {
+                loop: true,
+                pagination: {
+                  el: `.${swiperClass} .swiper-pagination`,
+                  clickable: true,
+                },
+              });
+            }, 0);
+          }
+        });
+
+
+        document.querySelectorAll('.swiper').forEach((el) => {
+          new Swiper(el, {
+            loop: true,
+            pagination: {
+              el: el.querySelector('.swiper-pagination'),
+              clickable: true
+            }
+          });
+        });
+
+
+        // Swiper for main product images
+        setTimeout(() => {
+          new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        }, 0);
+
+        // Translate "related products" title
+        const relatedTitle = document.getElementById("related-title");
+        if (relatedTitle) {
+          const relatedTranslations = {
+            uz: "O‘xshash mahsulotlar",
+            ru: "Похожие продукты",
+            en: "Related products"
+          };
+          relatedTitle.textContent = relatedTranslations[currentLang] || relatedTranslations["ru"];
         }
       });
-
-      // Swiper for main product images
-      setTimeout(() => {
-        new Swiper(".mySwiper", {
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      }, 0);
-
-      // Translate "related products" title
-      const relatedTitle = document.getElementById("related-title");
-      if (relatedTitle) {
-        const relatedTranslations = {
-          uz: "O‘xshash mahsulotlar",
-          ru: "Похожие продукты",
-          en: "Related products"
-        };
-        relatedTitle.textContent = relatedTranslations[currentLang] || relatedTranslations["ru"];
-      }
-    });
   </script>
 </body>
+
 </html>

@@ -34,7 +34,7 @@ class VivasamApp {
     initNavbar() {
         const navbar = document.getElementById('mainNav');
         const navLinks = document.querySelectorAll('.nav-link');
-        
+
         // Handle scroll effect
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
@@ -46,15 +46,15 @@ class VivasamApp {
 
         // Handle active link highlighting
         const sections = document.querySelectorAll('section[id]');
-        
+
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY + 100;
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.offsetHeight;
                 const sectionId = section.getAttribute('id');
-                
+
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                     navLinks.forEach(link => {
                         link.classList.remove('active');
@@ -97,7 +97,7 @@ class VivasamApp {
     // Initialize back to top button
     initBackToTop() {
         const backToTopButton = document.getElementById('back-to-top');
-        
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTopButton.classList.add('show');
@@ -119,10 +119,10 @@ class VivasamApp {
     initLanguageSelector() {
         const languageSelect = document.getElementById('language-select');
         const savedLanguage = localStorage.getItem('selectedLanguage') || 'ru';
-        
+
         languageSelect.value = savedLanguage;
         this.setLanguage(savedLanguage);
-        
+
         languageSelect.addEventListener('change', (e) => {
             const selectedLanguage = e.target.value;
             localStorage.setItem('selectedLanguage', selectedLanguage);
@@ -148,9 +148,9 @@ class VivasamApp {
                 getInTouch: 'Get in Touch',
                 quickContact: 'Quick Contact',
                 aboutTitle: 'About VIVASAM Group',
-                aboutLead: "Vivasam Group is a modern manufacturer of dietary supplements that has been on the market since 2022. In a short period, the company has established itself as a reliable developer and supplier of high-quality dietary supplements, combining innovative formulas, natural ingredients, and a scientific approach to health.",
-                aboutText1: "Today, Vivasam's range includes more than 11 types of products aimed at supporting immunity, improving digestion, normalizing sleep, increasing energy, and comprehensive health improvement. All products undergo strict quality control and comply with modern production standards.",
-                aboutText2: "The company's mission is to make health care accessible, effective, and safe. Vivasam Group strives to offer everyone natural solutions to maintain an active lifestyle and strengthen health for many years.",
+                "aboutLead": "Vivasam Group has been producing high-quality dietary supplements since 2022, combining innovative formulas, natural ingredients, and a scientific approach.",
+                "aboutText1": "The company currently offers over 11 products aimed at supporting immunity, digestion, sleep, energy, and overall health. All products meet modern manufacturing standards and undergo strict quality control.",
+                "aboutText2": "Vivasam’s mission is to make healthcare accessible, effective, and safe. The company is committed to offering natural solutions for a healthy and active lifestyle.",
                 learnMore: 'Learn More',
                 certificates: 'Certificates',
                 sectionTitle: 'Our Products',
@@ -158,13 +158,13 @@ class VivasamApp {
                 brandTagline: 'Foundation of Health.',
                 partners: 'Partners',
                 address: 'Address',
-    phone: 'Phone',
-    email: 'Email',
-    callNow: 'Call Now',
-    viewLocation: 'View Location',
-    contactInfo: 'Contact Info',
-    followUs: 'Follow Us',
-    copyright: '© 2022 VIVASAM Group. All rights reserved.'
+                phone: 'Phone',
+                email: 'Email',
+                callNow: 'Call Now',
+                viewLocation: 'View Location',
+                contactInfo: 'Contact Info',
+                followUs: 'Follow Us',
+                copyright: '© 2022 VIVASAM Group. All rights reserved.'
             },
             ru: {
                 home: 'Главная',
@@ -180,9 +180,9 @@ class VivasamApp {
                 getInTouch: 'Связаться с нами',
                 quickContact: 'Быстрый контакт',
                 aboutTitle: 'О компании Vivasam Group',
-                aboutLead: "Компания Vivasam Group — современный производитель биологически активных добавок, работающий на рынке с 2022 года. За короткий срок компания зарекомендовала себя как надёжный разработчик и поставщик качественных БАДов, сочетающих инновационные формулы, натуральные ингредиенты и научный подход к здоровью.",
-                aboutText1: "Сегодня в ассортименте Vivasam представлено более 11 наименований препаратов, направленных на поддержание иммунитета, улучшение пищеварения, нормализацию сна, повышение энергии, а также комплексное оздоровление организма. Все продукты проходят строгий контроль качества и соответствуют современным стандартам производства.",
-                aboutText2: "Миссия компании — сделать заботу о здоровье доступной, эффективной и безопасной. Vivasam Group стремится предложить каждому человеку натуральные решения для поддержания активного образа жизни и укрепления здоровья на долгие годы.",
+                "aboutLead": "Vivasam Group — производитель качественных пищевых добавок с 2022 года, объединяющий инновационные формулы, натуральные ингредиенты и научный подход.",
+                "aboutText1": "Сегодня компания предлагает более 11 продуктов для поддержки иммунитета, пищеварения, сна, энергии и общего здоровья. Вся продукция производится по современным стандартам и под строгим контролем качества.",
+                "aboutText2": "Миссия Vivasam — сделать заботу о здоровье доступной, эффективной и безопасной. Компания стремится предлагать натуральные решения для активной и здоровой жизни.",
                 learnMore: 'Подробнее',
                 certificates: 'Сертификаты',
                 sectionTitle: 'Наши продукты',
@@ -211,9 +211,9 @@ class VivasamApp {
                 getInTouch: 'Bog\'lanish',
                 quickContact: 'Tezkor aloqa',
                 aboutTitle: 'VIVASAM Group haqida',
-                aboutLead: "Vivasam Group — 2022-yildan buyon bozorda faoliyat yuritayotgan zamonaviy parhez qo‘shimchalar ishlab chiqaruvchisi. Qisqa vaqt ichida kompaniya o‘zini yuqori sifatli oziq-ovqat qo‘shimchalarining ishonchli ishlab chiqaruvchisi va yetkazib beruvchisi sifatida ko‘rsatdi, innovatsion formulalar, tabiiy ingredientlar va salomatlikka ilmiy yondashuvni birlashtirdi.",
-                aboutText1: "Bugungi kunda Vivasam assortimentida immunitetni saqlash, ovqat hazm qilishni yaxshilash, uyquni normallashtirish, energiyani oshirish va tana salomatligini har tomonlama yaxshilashga qaratilgan 11 dan ortiq turdagi mahsulotlar mavjud. Barcha mahsulotlar qat'iy sifat nazorati ostida va zamonaviy ishlab chiqarish standartlariga mos keladi.",
-                aboutText2: "Kompaniyaning vazifasi sog'liqni saqlashni qulay, samarali va xavfsiz qilishdir. Vivasam Group ko'p yillar davomida faol hayot tarzini saqlab qolish va salomatlikni yaxshilash uchun barchaga tabiiy echimlarni taklif qilishga intiladi.",
+                "aboutLead": "Vivasam Group — 2022-yildan beri yuqori sifatli parhez qo‘shimchalar ishlab chiqaruvchi kompaniya bo‘lib, innovatsion formulalar, tabiiy ingredientlar va ilmiy yondashuvni uyg‘unlashtirgan.",
+                "aboutText1": "Bugungi kunda kompaniya 11 dan ortiq mahsulot ishlab chiqmoqda, ular immunitetni mustahkamlash, ovqat hazm qilish, uyqu, energiya va umumiy sog‘likni yaxshilashga xizmat qiladi. Barcha mahsulotlar sifat nazorati va zamonaviy standartlarga muvofiq ishlab chiqariladi.",
+                "aboutText2": "Vivasam sog‘liqni saqlashni qulay, samarali va xavfsiz qilishni maqsad qilgan. Kompaniya har kimga tabiiy va foydali echimlar taklif etishga intiladi.",
                 learnMore: 'Batafsil',
                 certificates: 'Sertifikatlar',
                 sectionTitle: 'Bizning mahsulotlar',
@@ -257,7 +257,7 @@ class VivasamApp {
             const response = await fetch('data/products.json');
             const products = await response.json();
             const currentLang = localStorage.getItem('selectedLanguage') || 'ru';
-            
+
             this.renderProducts(products, currentLang);
         } catch (error) {
             console.error('Error loading products:', error);
@@ -273,7 +273,7 @@ class VivasamApp {
         container.innerHTML = products.map((product, index) => {
             const productName = product.name?.[language] || product.name?.ru || 'Product';
             const swiperClass = `swiper-product-${index}`;
-            
+
             return `
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${index * 100}">
                     <div class="product-card">
@@ -385,7 +385,7 @@ class VivasamApp {
     // Initialize contact form
     initContactForm() {
         const contactForms = document.querySelectorAll('.contact-form');
-        
+
         contactForms.forEach(form => {
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
@@ -398,13 +398,13 @@ class VivasamApp {
     handleContactSubmission(form) {
         const formData = new FormData(form);
         const data = Object.fromEntries(formData);
-        
+
         // Show loading state
         const submitButton = form.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
         submitButton.textContent = 'Sending...';
         submitButton.disabled = true;
-        
+
         // Simulate form submission (replace with actual API call)
         setTimeout(() => {
             this.showNotification('Message sent successfully!', 'success');
@@ -428,15 +428,15 @@ class VivasamApp {
             transition: all 0.3s ease;
         `;
         notification.textContent = message;
-        
+
         document.body.appendChild(notification);
-        
+
         // Animate in
         setTimeout(() => {
             notification.style.opacity = '1';
             notification.style.transform = 'translateX(0)';
         }, 100);
-        
+
         // Remove after 5 seconds
         setTimeout(() => {
             notification.style.opacity = '0';
@@ -482,7 +482,7 @@ class VivasamApp {
     // Utility: Throttle function
     throttle(func, limit) {
         let inThrottle;
-        return function() {
+        return function () {
             const args = arguments;
             const context = this;
             if (!inThrottle) {
@@ -497,7 +497,7 @@ class VivasamApp {
 // Performance optimizations
 const optimizedScrollHandler = (() => {
     let ticking = false;
-    
+
     return (callback) => {
         if (!ticking) {
             requestAnimationFrame(() => {
