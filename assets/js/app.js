@@ -2,6 +2,17 @@
    VIVASAM - Modern JavaScript Application
    ======================================== */
 
+
+document.getElementById("loading-overlay").style.display = "flex";
+
+window.addEventListener("load", function () {
+    // Hide overlay when page is fully loaded (images, fonts, etc.)
+    const loadingOverlay = document.getElementById("loading-overlay");
+    if (loadingOverlay) {
+        loadingOverlay.style.display = "none";
+    }
+});
+
 class VivasamApp {
     constructor() {
         this.init();
@@ -127,6 +138,7 @@ class VivasamApp {
             const selectedLanguage = e.target.value;
             localStorage.setItem('selectedLanguage', selectedLanguage);
             this.setLanguage(selectedLanguage);
+            location.reload();
         });
     }
 
