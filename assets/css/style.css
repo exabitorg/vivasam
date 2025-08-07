@@ -249,6 +249,7 @@ h6 {
   max-width: 120px;
   font-weight: 500;
   color: var(--gray-700) !important;
+  background: inherit;
 }
 
 /* Hero Section */
