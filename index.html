@@ -361,11 +361,9 @@
     <footer class="footer bg-dark text-light py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="footer-brand">
-                        <img src="assets/img/logo_white.png" alt="VIVASAM" class="footer-logo mb-3">
-                        <p class="brand-tagline" data-i18n="brandTagline">Foundation of Health</p>
-                    </div>
+                <div class="col-lg-2 mb-4 flex footer-brand">
+                    <img src="assets/img/logo_white.png" alt="VIVASAM" class="footer-logo mb-3">
+                    <p class="brand-tagline" data-i18n="brandTagline">Foundation of Health</p>
                 </div>
 
                 <div class="col-lg-4 mb-4">
@@ -450,7 +448,6 @@
                     return `
           <a href="product.html?index=${index}" class="col-lg-4 col-md-6 mb-4 text-decoration-none text-dark" data-aos="fade-up" data-aos-delay="${index * 100}">
   <div class="product-card h-100 d-flex flex-column justify-content-between">
-    <span class="card-badge">${category}</span>
     <div class="swiper ${swiperClass}">
       <div class="swiper-wrapper">
         ${product.images.map(img => `

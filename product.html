@@ -177,38 +177,48 @@
         // Accordion rendering
         const accordion = document.getElementById("descriptionAccordion");
         accordion.innerHTML = "";
+
         const titles = product?.description_titles || {};
         const titleKeys = ["first", "second", "third", "fourth", "fifth", "sixth"];
+
         for (let i = 1; i <= 6; i++) {
           const descKey = `description${i}`;
           const descText = product?.[descKey]?.[currentLang] || product?.[descKey]?.ru || "";
+          if (!descText) continue;
+
           const title = titles[titleKeys[i - 1]]?.[currentLang] || titles[titleKeys[i - 1]]?.ru || `Детали ${i}`;
+
           accordion.innerHTML += `
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading${i}">
-              <button class="accordion-button ${i > 1 ? "collapsed" : ""}" type="button" data-bs-toggle="collapse" data-bs-target="#desc${i}" aria-expanded="${i === 1}">
-                ${title}
-              </button>
-            </h2>
-            <div id="desc${i}" class="accordion-collapse collapse ${i === 1 ? "show" : ""}">
-              <div class="accordion-body">${descText}</div>
-            </div>
-          </div>
-        `;
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading${i}">
+        <button class="accordion-button ${i > 1 ? "collapsed" : ""}" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#desc${i}"
+          aria-expanded="${i === 1}"
+          aria-controls="desc${i}">
+          ${title}
+        </button>
+      </h2>
+      <div id="desc${i}" class="accordion-collapse collapse ${i === 1 ? "show" : ""}" 
+           aria-labelledby="heading${i}" 
+           data-bs-parent="#descriptionAccordion">
+        <div class="accordion-body">${descText}</div>
+      </div>
+    </div>
+  `;
         }
+
 
         // Related products creative cards with swiper
         const relatedContainer = document.getElementById("related-products");
         relatedContainer.innerHTML = "";
         products.forEach((p, i) => {
           if (i !== index) {
-            const swiperClass = `related-swiper-${i}`;
+            const swiperClass = `related-swiper`;
             relatedContainer.innerHTML += `
-          <a href="product.html?index=${i}" class="col-md-4 col-sm-6 text-decoration-none text-dark">
+         <a href="product.html?index=${i}" class="col-md-4 col-sm-6 text-decoration-none text-dark">
   <div class="product-card h-100 d-flex flex-column justify-content-between">
-    <span class="card-badge">${p.category?.[currentLang] || p.category?.ru || ""}</span>
-
-    <div class="swiper swiper-${i}">
+    <div class="swiper product-swiper swiper-${i}">
       <div class="swiper-wrapper">
         ${p.images.map((img) => `
           <div class="swiper-slide">
@@ -216,8 +226,7 @@
           </div>
         `).join("")}
       </div>
-      <!-- ✅ Pagination block -->
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination swiper-pagination-${i}"></div>
     </div>
 
     <div class="product-card-body flex-grow-1">
@@ -228,6 +237,7 @@
     </div>
   </div>
 </a>
+
           `;
             setTimeout(() => {
               new Swiper(`.${swiperClass}`, {
@@ -239,6 +249,20 @@
               });
             }, 0);
           }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const swipers = document.querySelectorAll(".product-swiper");
+
+          swipers.forEach((swiperEl, index) => {
+            new Swiper(swiperEl, {
+              loop: true,
+              pagination: {
+                el: `.swiper-pagination-${index}`,
+                clickable: true,
+              },
+            });
+          });
         });
 
 
@@ -254,15 +278,16 @@
 
 
         // Swiper for main product images
-        setTimeout(() => {
-          new Swiper(".mySwiper", {
+        document.addEventListener("DOMContentLoaded", function () {
+          const swiper = new Swiper("#main-product-swiper", {
             loop: true,
             pagination: {
-              el: ".swiper-pagination",
+              el: "#main-swiper-pagination",
               clickable: true,
             },
           });
-        }, 0);
+        });
+
 
         // Translate "related products" title
         const relatedTitle = document.getElementById("related-title");
