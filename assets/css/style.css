@@ -256,7 +256,7 @@ h6 {
     rgba(var(--primary-rgb), 0.1) 100%
   );
   min-height: 100vh;
-  padding: 1rem 0 4rem 1rem;
+  padding: 6rem 15rem 4rem 4rem;
   position: relative;
   overflow: hidden;
 }
