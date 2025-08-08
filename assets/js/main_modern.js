@@ -393,7 +393,7 @@ function renderProducts(products, language) {
      */
     function createProductSwiper(images, swiperClass) {
         if (!images || images.length === 0) {
-            return `<img src="assets/img/medicine.png" class="product-image" alt="Product">`;
+            return `<img src="assets/img/medicine.webp" class="product-image" alt="Product">`;
         }
 
         return `
@@ -458,9 +458,9 @@ function renderProducts(products, language) {
      */
     function showFallbackProducts(container) {
         const fallbackProducts = [
-            { name: 'Natural Supplement 1', image: 'assets/img/medicine.png' },
-            { name: 'Natural Supplement 2', image: 'assets/img/medicine.png' },
-            { name: 'Natural Supplement 3', image: 'assets/img/medicine.png' }
+            { name: 'Natural Supplement 1', image: 'assets/img/medicine.webp' },
+            { name: 'Natural Supplement 2', image: 'assets/img/medicine.webp' },
+            { name: 'Natural Supplement 3', image: 'assets/img/medicine.webp' }
         ];
 
         container.innerHTML = fallbackProducts.map((product, index) => `
