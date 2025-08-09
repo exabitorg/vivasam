@@ -521,9 +521,34 @@ const optimizedScrollHandler = (() => {
     };
 })();
 
-// Initialize app when DOM is loaded
+// Initialize app when DOM is loaded storedLang
 document.addEventListener('DOMContentLoaded', () => {
     new VivasamApp();
+    let storedLang = localStorage.getItem("selectedLanguage");
+    if (!storedLang) {
+storedLang = 'ru'; // Default language if none is stored
+localStorage.setItem("selectedLanguage", storedLang);
+    }
+  const browserLang = (navigator.language || 'ru').slice(0, 2);
+  const currentLang = ['uz', 'ru', 'en'].includes(storedLang) ? storedLang : (['uz', 'ru', 'en'].includes(browserLang) ? browserLang : 'ru');
+  document.addEventListener("DOMContentLoaded", () => {
+    const langSelect = document.getElementById("language-select");
+    if (langSelect) langSelect.value = currentLang;
+    langSelect.addEventListener("change", (e) => {
+      const newLang = e.target.value;
+      localStorage.setItem("selectedLanguage", newLang);
+      location.reload();
+    });
+
+    // --- ADD THIS BLOCK TO FORCE TRANSLATION ON LOAD ---
+    // If select value and localStorage are not equal, fix and reload
+    if (langSelect && langSelect.value !== currentLang) {
+      langSelect.value = currentLang;
+      localStorage.setItem("selectedLanguage", currentLang);
+      location.reload();
+    }
+    // --------------------------------------------------
+  });
 });
 
 // Handle page visibility changes for performance
@@ -539,3 +564,7 @@ document.addEventListener('visibilitychange', () => {
 
 // Export for potential external use
 window.VivasamApp = VivasamApp;
+
+document.addEventListener('DOMContentLoaded', () => {
+    new VivasamApp();
+  });

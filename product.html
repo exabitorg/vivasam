@@ -310,6 +310,31 @@
         }
       });
   </script>
+  <script>
+  // Language logic (same as index_new.html)
+  const storedLanguage = localStorage.getItem("selectedLanguage");
+  const browserLanguage = (navigator.language || 'ru').slice(0, 2);
+  const currentLanguage = ['uz', 'ru', 'en'].includes(storedLanguage) ? storedLanguage : (['uz', 'ru', 'en'].includes(browserLanguage) ? browserLang : 'ru');
+  document.addEventListener("DOMContentLoaded", () => {
+    const langSelect = document.getElementById("language-select");
+    if (langSelect) langSelect.value = currentLanguage;
+    langSelect.addEventListener("change", (e) => {
+      const newLang = e.target.value;
+      localStorage.setItem("selectedLanguage", newLang);
+      location.reload();
+    });
+
+    // --- ADD THIS BLOCK TO FORCE TRANSLATION ON LOAD ---
+    // If select value and localStorage are not equal, fix and reload
+    if (langSelect && langSelect.value !== currentLanguage) {
+      langSelect.value = currentLanguage;
+      localStorage.setItem("selectedLanguage", currentLanguage);
+      location.reload();
+    }
+    // --------------------------------------------------
+  });
+// ...existing code...
+</script>
 </body>
 
 </html>
