@@ -14,19 +14,17 @@ jobs:
       - name: Deploy via SSH (git pull on server)
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: 159.65.226.33         # e.g., 159.65.xx.xx
-          username: exabitorg     # e.g., deploy
-          key: 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            # private key for SSH_USER
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             set -euo pipefail
 
-            # ---------- CONFIG ----------
-            WEBROOT="/var/www/vivasam"     # <-- CHANGE to your real Nginx root
+            WEBROOT="/var/www/vivasam"
             BRANCH="main"
-            REPO="git@github.com:exabitorg/vivasam.git"
-            # ----------------------------
+            REPO="https://github.com/${{ github.repository }}.git"   # use HTTPS
 
-            REPO_NAME="git@github.com:exabitorg/vivasam.git"
+            REPO_NAME="${{ github.repository }}"
             ACTOR="${{ github.actor }}"
             COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
             COMMIT_URL="https://github.com/${{ github.repository }}/commit/${{ github.sha }}"
@@ -41,33 +39,24 @@ jobs:
 
             cd "$WEBROOT"
             git config --global --add safe.directory "$WEBROOT"
-            git fetch origin "main"
-            git reset --hard "origin/main"
+            git fetch origin "$BRANCH"
+            git reset --hard "origin/$BRANCH"
 
-            # If final files are in a subfolder (e.g., dist/), copy them up:
+            # If your site files are in a subfolder (e.g., dist/), copy them up:
             # cp -a dist/. "$WEBROOT"/
 
-            # ---------- Deploy check ----------
+            # Deploy check + Telegram
             if ls *.html >/dev/null 2>&1; then
-              curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
-                -d chat_id=-1002513646170 \
-                -d text="✅ *Build SUCCESS and deployed*
-                  📦 *Repo*: ${REPO_NAME}
-                  👤 *Pushed by*: ${ACTOR}
-                  📝 *Commit*: ${COMMIT_MESSAGE}
-                  🔗 [View Commit](${COMMIT_URL})" \
-                -d parse_mode=Markdown
+              MSG=$'✅ Deploy SUCCESS and live\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
+              curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+                -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+                --data-urlencode "text=$MSG"
             else
-              curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
-                -d chat_id=-1002513646170 \
-                -d text="❌ *Build FAILED*
-                  📦 *Repo*: ${REPO_NAME}
-                  👤 *Pushed by*: ${ACTOR}
-                  📝 *Commit*: ${COMMIT_MESSAGE}
-                  🔗 [View Commit](${COMMIT_URL})" \
-                -d parse_mode=Markdown
+              MSG=$'❌ Deploy FAILED — no .html found\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
+              curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+                -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+                --data-urlencode "text=$MSG"
               exit 1
             fi
 
-            # Reload Nginx
             sudo nginx -t && sudo systemctl reload nginx
