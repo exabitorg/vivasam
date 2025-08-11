@@ -160,9 +160,9 @@ class VivasamApp {
                 getInTouch: 'Get in Touch',
                 quickContact: 'Quick Contact',
                 aboutTitle: 'About VIVASAM Group',
-                "aboutLead": "Vivasam Group has been producing high-quality dietary supplements since 2022, combining innovative formulas, natural ingredients, and a scientific approach.",
-                "aboutText1": "The company currently offers over 11 products aimed at supporting immunity, digestion, sleep, energy, and overall health. All products meet modern manufacturing standards and undergo strict quality control.",
-                "aboutText2": "Vivasam’s mission is to make healthcare accessible, effective, and safe. The company is committed to offering natural solutions for a healthy and active lifestyle.",
+                aboutLead: "Vivasam Group has been producing high-quality dietary supplements since 2022, combining innovative formulas, natural ingredients, and a scientific approach.",
+                aboutText1: "The company currently offers over 11 products aimed at supporting immunity, digestion, sleep, energy, and overall health. All products meet modern manufacturing standards and undergo strict quality control.",
+                aboutText2: "Vivasam’s mission is to make healthcare accessible, effective, and safe. The company is committed to offering natural solutions for a healthy and active lifestyle.",
                 learnMore: 'Learn More',
                 certificates: 'Certificates',
                 sectionTitle: 'Our Products',
@@ -176,7 +176,8 @@ class VivasamApp {
                 viewLocation: 'View Location',
                 contactInfo: 'Contact Info',
                 followUs: 'Follow Us',
-                copyright: '© 2022 VIVASAM Group. All rights reserved.'
+                copyright: '© 2022 VIVASAM Group. All rights reserved.',
+                location: "Tashkent city, Yakkasaroy district, Babur street 73 A",
             },
             ru: {
                 home: 'Главная',
@@ -192,9 +193,9 @@ class VivasamApp {
                 getInTouch: 'Связаться с нами',
                 quickContact: 'Быстрый контакт',
                 aboutTitle: 'О компании Vivasam Group',
-                "aboutLead": "Vivasam Group — производитель качественных пищевых добавок с 2022 года, объединяющий инновационные формулы, натуральные ингредиенты и научный подход.",
-                "aboutText1": "Сегодня компания предлагает более 11 продуктов для поддержки иммунитета, пищеварения, сна, энергии и общего здоровья. Вся продукция производится по современным стандартам и под строгим контролем качества.",
-                "aboutText2": "Миссия Vivasam — сделать заботу о здоровье доступной, эффективной и безопасной. Компания стремится предлагать натуральные решения для активной и здоровой жизни.",
+                aboutLead: "Vivasam Group — производитель качественных пищевых добавок с 2022 года, объединяющий инновационные формулы, натуральные ингредиенты и научный подход.",
+                aboutText1: "Сегодня компания предлагает более 11 продуктов для поддержки иммунитета, пищеварения, сна, энергии и общего здоровья. Вся продукция производится по современным стандартам и под строгим контролем качества.",
+                aboutText2: "Миссия Vivasam — сделать заботу о здоровье доступной, эффективной и безопасной. Компания стремится предлагать натуральные решения для активной и здоровой жизни.",
                 learnMore: 'Подробнее',
                 certificates: 'Сертификаты',
                 sectionTitle: 'Наши продукты',
@@ -207,7 +208,8 @@ class VivasamApp {
                 viewLocation: 'Посмотреть на карте',
                 contactInfo: 'Контактная информация',
                 followUs: 'Мы в соцсетях',
-                copyright: '© 2022 VIVASAM Group. Все права защищены.'
+                copyright: '© 2022 VIVASAM Group. Все права защищены.',
+                location: "г.Ташкент, Яккасаройский район, улица Бабура 73 А"
             },
             uz: {
                 home: 'Bosh sahifa',
@@ -223,9 +225,9 @@ class VivasamApp {
                 getInTouch: 'Bog\'lanish',
                 quickContact: 'Tezkor aloqa',
                 aboutTitle: 'VIVASAM Group haqida',
-                "aboutLead": "Vivasam Group — 2022-yildan beri yuqori sifatli parhez qo‘shimchalar ishlab chiqaruvchi kompaniya bo‘lib, innovatsion formulalar, tabiiy ingredientlar va ilmiy yondashuvni uyg‘unlashtirgan.",
-                "aboutText1": "Bugungi kunda kompaniya 11 dan ortiq mahsulot ishlab chiqmoqda, ular immunitetni mustahkamlash, ovqat hazm qilish, uyqu, energiya va umumiy sog‘likni yaxshilashga xizmat qiladi. Barcha mahsulotlar sifat nazorati va zamonaviy standartlarga muvofiq ishlab chiqariladi.",
-                "aboutText2": "Vivasam sog‘liqni saqlashni qulay, samarali va xavfsiz qilishni maqsad qilgan. Kompaniya har kimga tabiiy va foydali echimlar taklif etishga intiladi.",
+                aboutLead: "Vivasam Group — 2022-yildan beri yuqori sifatli parhez qo‘shimchalar ishlab chiqaruvchi kompaniya bo‘lib, innovatsion formulalar, tabiiy ingredientlar va ilmiy yondashuvni uyg‘unlashtirgan.",
+                aboutText1: "Bugungi kunda kompaniya 11 dan ortiq mahsulot ishlab chiqmoqda, ular immunitetni mustahkamlash, ovqat hazm qilish, uyqu, energiya va umumiy sog‘likni yaxshilashga xizmat qiladi. Barcha mahsulotlar sifat nazorati va zamonaviy standartlarga muvofiq ishlab chiqariladi.",
+                aboutText2: "Vivasam sog‘liqni saqlashni qulay, samarali va xavfsiz qilishni maqsad qilgan. Kompaniya har kimga tabiiy va foydali echimlar taklif etishga intiladi.",
                 learnMore: 'Batafsil',
                 certificates: 'Sertifikatlar',
                 sectionTitle: 'Bizning mahsulotlar',
@@ -238,7 +240,8 @@ class VivasamApp {
                 viewLocation: 'Joylashuvni ko‘rish',
                 contactInfo: 'Aloqa ma’lumotlari',
                 followUs: 'Biz ijtimoiy tarmoqlarda',
-                copyright: '© 2022 VIVASAM Group. Barcha huquqlar himoyalangan.'
+                copyright: '© 2022 VIVASAM Group. Barcha huquqlar himoyalangan.',
+                location: "Toshkent shahar, Yakkasaroy tumani, Bobur kochasi 73 A ",
             }
         };
 
