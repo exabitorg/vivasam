@@ -1,0 +1,73 @@
+name: Deploy Vivasam HTML
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH (git pull on server)
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: 159.65.226.33         # e.g., 159.65.xx.xx
+          username: exabitorg     # e.g., deploy
+          key: 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            # private key for SSH_USER
+          script: |
+            set -euo pipefail
+
+            # ---------- CONFIG ----------
+            WEBROOT="/var/www/vivasam"     # <-- CHANGE to your real Nginx root
+            BRANCH="main"
+            REPO="git@github.com:exabitorg/vivasam.git"
+            # ----------------------------
+
+            REPO_NAME="git@github.com:exabitorg/vivasam.git"
+            ACTOR="${{ github.actor }}"
+            COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
+            COMMIT_URL="https://github.com/${{ github.repository }}/commit/${{ github.sha }}"
+
+            sudo mkdir -p "$WEBROOT"
+            sudo chown -R "$USER":"$USER" "$WEBROOT"
+
+            if [ ! -d "$WEBROOT/.git" ]; then
+              echo "First-time setup: cloning into $WEBROOT"
+              git clone --depth=1 --branch "$BRANCH" "$REPO" "$WEBROOT"
+            fi
+
+            cd "$WEBROOT"
+            git config --global --add safe.directory "$WEBROOT"
+            git fetch origin "main"
+            git reset --hard "origin/main"
+
+            # If final files are in a subfolder (e.g., dist/), copy them up:
+            # cp -a dist/. "$WEBROOT"/
+
+            # ---------- Deploy check ----------
+            if ls *.html >/dev/null 2>&1; then
+              curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
+                -d chat_id=-1002513646170 \
+                -d text="✅ *Build SUCCESS and deployed*
+                  📦 *Repo*: ${REPO_NAME}
+                  👤 *Pushed by*: ${ACTOR}
+                  📝 *Commit*: ${COMMIT_MESSAGE}
+                  🔗 [View Commit](${COMMIT_URL})" \
+                -d parse_mode=Markdown
+            else
+              curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
+                -d chat_id=-1002513646170 \
+                -d text="❌ *Build FAILED*
+                  📦 *Repo*: ${REPO_NAME}
+                  👤 *Pushed by*: ${ACTOR}
+                  📝 *Commit*: ${COMMIT_MESSAGE}
+                  🔗 [View Commit](${COMMIT_URL})" \
+                -d parse_mode=Markdown
+              exit 1
+            fi
+
+            # Reload Nginx
+            sudo nginx -t && sudo systemctl reload nginx
