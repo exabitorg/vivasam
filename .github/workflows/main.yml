@@ -14,17 +14,18 @@ jobs:
       - name: Deploy via SSH (git pull on server)
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          host: 159.65.226.33                 # <-- YOUR SERVER IP/Domain
+          username: root                    # <-- YOUR LINUX USER
+          password: ym4tA4SBFyCbW
           script: |
-            set -euo pipefail
+            cd /var/www/vivasam
+            echo "machine github.com login exabitorg password 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" > ~/.netrc
 
-            WEBROOT="/var/www/vivasam"
+            WEBROOT="/var/www/vivasam"                 # <-- Nginx root
             BRANCH="main"
-            REPO="https://github.com/${{ github.repository }}.git"   # use HTTPS
+            REPO="https://github.com/exabitorg/vivasam.git"   # <-- your repo HTTPS URL
 
-            REPO_NAME="${{ github.repository }}"
+            REPO_NAME="exabitorg/vivasam"
             ACTOR="${{ github.actor }}"
             COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
             COMMIT_URL="https://github.com/${{ github.repository }}/commit/${{ github.sha }}"
@@ -45,17 +46,19 @@ jobs:
             # If your site files are in a subfolder (e.g., dist/), copy them up:
             # cp -a dist/. "$WEBROOT"/
 
-            # Deploy check + Telegram
+            # Telegram notify
             if ls *.html >/dev/null 2>&1; then
-              MSG=$'✅ Deploy SUCCESS and live\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
+              MSG=$'✅ Build SUCCESS and deployed\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
               curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
-                -d chat_id="-1002513646170" \
-                --data-urlencode "text=$MSG"
+                -d chat_id=-1002513646170 \
+                --data-urlencode "text=$MSG" \
+                -d parse_mode=Markdown
             else
-              MSG=$'❌ Deploy FAILED — no .html found\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
-              curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-                -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-                --data-urlencode "text=$MSG"
+              MSG=$'❌ Build FAILED — no .html found\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
+              curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
+                -d chat_id=-1002513646170 \
+                --data-urlencode "text=$MSG" \
+                -d parse_mode=Markdown
               exit 1
             fi
 
