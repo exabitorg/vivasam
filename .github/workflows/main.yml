@@ -2,31 +2,41 @@ name: Deploy Vivasam HTML
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Deploy via SSH (git pull on server)
+      - name: Deploy via SSH (pull to /var/www/vivasam and reload Nginx)
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: 159.65.226.33
           username: root
-          key: "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQAAAJAjM3ybIzN8
-mwAAAAtzc2gtZWQyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQ
-AAAEDlSvGSgofzTiRMRyMjLexiNfxbUwosihSDZqWrgmGWdNVdmzhWJQl62ytv2swN9PVf
-FiX8/LSh1sYcPTUCo49NAAAACmdoYS1kZXBsb3kBAgM="
+          password: &c&ipYZC6geQg-s
+          command_timeout: 15m
           script: |
             set -euo pipefail
-            cd /var/www/vivasam
-            if [ ! -d .git ]; then
-              git clone --depth=1 --branch main https://github.com/exabitorg/vivasam.git /var/www/vivasam
-            fi
-            git fetch origin main
-            git reset --hard origin/main
-            nginx -t && systemctl reload nginx
+
+            WEBROOT="/var/www/vivasam"
+            BRANCH="main"
+            REPO="https://github.com/exabitorg/vivasam.git"
+
+            cd "$WEBROOT"
+
+            # If your repo is PRIVATE and the remote is HTTPS, uncomment next 3 lines
+            # and set GH_USER and GH_PAT secrets.
+            echo "machine github.com login exabitorg password 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" > ~/.netrc
+            chmod 600 ~/.netrc
+            git remote set-url origin "$REPO"
+
+            git pull origin "$BRANCH"
+            # git reset --hard "origin/$BRANCH"
+
+            nginx -t
+            systemctl reload nginx
