@@ -25,7 +25,7 @@ jobs:
             BRANCH="main"
             REPO="https://github.com/exabitorg/vivasam.git"   # <-- your repo HTTPS URL
 
-            REPO_NAME="exabitorg/vivasam"
+            REPO_NAME="vivasam"
             ACTOR="${{ github.actor }}"
             COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
             COMMIT_URL="https://github.com/${{ github.repository }}/commit/${{ github.sha }}"
@@ -39,12 +39,7 @@ jobs:
             fi
 
             cd "$WEBROOT"
-            git config --global --add safe.directory "$WEBROOT"
-            git fetch origin "$BRANCH"
-            git reset --hard "origin/$BRANCH"
-
-            # If your site files are in a subfolder (e.g., dist/), copy them up:
-            # cp -a dist/. "$WEBROOT"/
+            git pull
 
             # Telegram notify
             if ls *.html >/dev/null 2>&1; then
