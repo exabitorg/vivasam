@@ -16,7 +16,11 @@ jobs:
         with:
           host: 159.65.226.33
           username: root
-          key: b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQAAAJAjM3ybIzN8mwAAAAtzc2gtZWQyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQAAAEDlSvGSgofzTiRMRyMjLexiNfxbUwosihSDZqWrgmGWdNVdmzhWJQl62ytv2swN9PVfFiX8/LSh1sYcPTUCo49NAAAACmdoYS1kZXBsb3kBAgM=          
+          key: "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQAAAJAjM3ybIzN8
+mwAAAAtzc2gtZWQyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQ
+AAAEDlSvGSgofzTiRMRyMjLexiNfxbUwosihSDZqWrgmGWdNVdmzhWJQl62ytv2swN9PVf
+FiX8/LSh1sYcPTUCo49NAAAACmdoYS1kZXBsb3kBAgM="
           script: |
             set -euo pipefail
             cd /var/www/vivasam
