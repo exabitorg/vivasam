@@ -14,47 +14,15 @@ jobs:
       - name: Deploy via SSH (git pull on server)
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: 159.65.226.33                 # <-- YOUR SERVER IP/Domain
-          username: root                    # <-- YOUR LINUX USER
-          password: ym4tA4SBFyCbW
+          host: 159.65.226.33
+          username: root
+          key: b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQAAAJAjM3ybIzN8mwAAAAtzc2gtZWQyNTUxOQAAACDVXZs4ViUJetsrb9rMDfT1XxYl/Py0odbGHD01AqOPTQAAAEDlSvGSgofzTiRMRyMjLexiNfxbUwosihSDZqWrgmGWdNVdmzhWJQl62ytv2swN9PVfFiX8/LSh1sYcPTUCo49NAAAACmdoYS1kZXBsb3kBAgM=          
           script: |
+            set -euo pipefail
             cd /var/www/vivasam
-            echo "machine github.com login exabitorg password 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" > ~/.netrc
-
-            WEBROOT="/var/www/vivasam"                 # <-- Nginx root
-            BRANCH="main"
-            REPO="https://github.com/exabitorg/vivasam.git"   # <-- your repo HTTPS URL
-
-            REPO_NAME="vivasam"
-            ACTOR="${{ github.actor }}"
-            COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
-            COMMIT_URL="https://github.com/${{ github.repository }}/commit/${{ github.sha }}"
-
-            sudo mkdir -p "$WEBROOT"
-            sudo chown -R "$USER":"$USER" "$WEBROOT"
-
-            if [ ! -d "$WEBROOT/.git" ]; then
-              echo "First-time setup: cloning into $WEBROOT"
-              git clone --depth=1 --branch "$BRANCH" "$REPO" "$WEBROOT"
+            if [ ! -d .git ]; then
+              git clone --depth=1 --branch main https://github.com/exabitorg/vivasam.git /var/www/vivasam
             fi
-
-            cd "$WEBROOT"
-            git pull
-
-            # Telegram notify
-            if ls *.html >/dev/null 2>&1; then
-              MSG=$'✅ Build SUCCESS and deployed\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
-              curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
-                -d chat_id=-1002513646170 \
-                --data-urlencode "text=$MSG" \
-                -d parse_mode=Markdown
-            else
-              MSG=$'❌ Build FAILED — no .html found\n📦 Repo: '"$REPO_NAME"$'\n👤 Pushed by: '"$ACTOR"$'\n📝 Commit: '"$COMMIT_MESSAGE"$'\n🔗 '"$COMMIT_URL"
-              curl -s -X POST "https://api.telegram.org/bot8001007521:AAHiFMtf-GippKEHqsaLTr81VtP7k1b-Kco/sendMessage" \
-                -d chat_id=-1002513646170 \
-                --data-urlencode "text=$MSG" \
-                -d parse_mode=Markdown
-              exit 1
-            fi
-
-            sudo nginx -t && sudo systemctl reload nginx
+            git fetch origin main
+            git reset --hard origin/main
+            nginx -t && systemctl reload nginx
